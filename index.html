@@ -1,12 +1,138 @@
 ﻿<!DOCTYPE html>
 
+
+
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Isaac Weiss</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <p>Hello! This is deployment 4</p>
+    <section id="MainSection">
+        <div class="container-fluid top">
+            <div class="row">
+                <div class="col-md-6"> <h1 id="title" class="h2 display-2 text-center text-dark text-sm-left">@ViewBag.Title</h1></div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-end">
+                    <button id="Filter" class="btn btn-success hide mb-3"> Filter <span class="fas fa-caret-down" aria-hidden="true"></span></button>
+                    <button id="HideFilterButton" class="btn btn-secondary mb-3"> Close <span class="fas fa-caret-up" aria-hidden="true"></span></button>
+                </div>
+            </div>
+            <div class="row">
+
+                <div id="filterGroup" class="card border-1 shadow mx-auto mt-3 px-lg-5">
+                    <form role="form">
+
+                        <div id="topRow" class="row">
+                            <div class="col-md">
+                                <label for="eventTypeSelect">Event Type:</label>
+                                <div>
+                                    <select id="eventTypeSelect" class="form-control" multiple="multiple">
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <label for="eventDateStartFilter">Event Date Start: </label>
+                                <div class="input-group date" id="date-time1" data-target-input="nearest">
+                                    <input id="min" name="datePickerStart" aria-label="start date" type="text" class="form-control datetimepicker-input" data-target="#date-time1" data-toggle="datetimepicker" placeholder="Event Start Date" required />
+                                    <div class="input-group-append" data-target="#date-time1" data-toggle="datetimepicker">
+                                        <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <label for="eventDateEndFilter">Event Date End: </label>
+                                <div class="input-group date" id="date-time2" data-target-input="nearest">
+                                    <input id="max" name="datePickerEnd" aria-label="end date" type="text" class="form-control datetimepicker-input" data-target="#date-time2" data-toggle="datetimepicker" placeholder="Event End Date" required />
+                                    <div class="input-group-append" data-target="#date-time2" data-toggle="datetimepicker">
+                                        <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="middleRow" class="row">
+                            <div class="col-md">
+                                <label for="eventTitleFilter">Event Title: </label>
+                                <div>
+                                    <select class="form-control" id="eventTitleFilter" multiple="multiple">
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <label for="venueSelect">Venue: </label>
+                                <div>
+                                    <select class="form-control" id="venueSelect" multiple="multiple">
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <label for="costFilter">Cost: </label>
+                                <div>
+                                    <select class="form-control" id="costFilter" multiple="multiple">
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="bottomRow" class="row">
+                            <div class="col-md">
+                                <label for="unitOwnerFilter">Unit: </label>
+                                <div>
+                                    <select class="form-control" id="unitOwnerFilter" multiple="multiple">
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <label for="consumerFilter">Consumer: </label>
+                                <div>
+                                    <select class="form-control" id="consumerFilter" multiple="multiple">
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <label for="completedSelect">Completed: </label>
+                                <select id="completedSelect" class="form-control">
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div id="submitRow" class="row">
+                            <div class="col-md">
+                                <button type="button" id="submitFilter" class="btn btn-primary">Filter</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div id="PartialLoader" class="SectionContent card border-0 shadow text-dark mt-3">
+                <div id="loadingFilterRow" class="row">
+                    <div class="align-items-center col d-flex flex-column">
+                        <h3> Use the Filter to Select Events</h3>
+                    </div>
+                </div>
+                <div id="spinnerRow" class="row d-none">
+                    <div class="align-items-center col d-flex flex-column">
+                        <div class="spinner-border m-5 text-dark" role="status">
+                            <span class="sr-only">Loading Events...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
+
 
