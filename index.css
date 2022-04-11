@@ -1,4 +1,21 @@
-﻿/*
+﻿.navbar {
+    background-color: #fcf9d8!important;
+}
+
+    .navbar a {
+        color: #436fb6 !important;
+        font-weight: 700;
+    }
+
+.container-fluid {
+    display: flex;
+}
+
+section.full {
+    min-height: 100vh;
+}
+
+/*
 COLOR PALETTE
 https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
 #F7FFF7 - almost white
@@ -182,11 +199,11 @@ footer a {
         margin-right: 20px;
     }
 
-    .job-item {
+/*    .job-item {
         display: grid;
         grid-template-columns: 1fr 2fr;
         column-gap: 20px;
-    }
+    }*/
 
     .contact-list {
         display: flex;
@@ -208,4 +225,51 @@ footer a {
     .contact-list a {
         padding: 5px;
     }
+}
+
+:root {
+    --bg-color: #FFF8E6;
+    --red-color: #CC312A;
+    --blue-color: #7FBFBD;
+    --orange-color: #de903c;
+    --yellow-color: #ffcc33;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Margins;
+    src: url('fonts/margins.otf');
+}
+
+section {
+    padding: 3rem 0rem;
+    background-size: 75vh;
+}
+
+nav.navbar {
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    transition: top .3s;
+}
+
+.bordered-card {
+    box-shadow: 1px 1px 0px 3px #3bb3b3 !important;
+    border-color: #6cdddd !important;
+    background-color: #ffffffe3;
+    border-style: solid !important;
+    border-width: 4px !important;
+    border-left: 0px none !important;
+    border-top: 0px none !important;
+}
+
+#projects {
+    background: url(https://images.hdqwalls.com/download/simple-background-blur-xb-1920x1080.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
