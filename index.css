@@ -155,3 +155,11 @@ img {
         border-bottom: 3px solid var(--blue-color);
         margin-bottom: 3rem;
     }
+
+.nav-other {
+    color: var(--blue-color)!important;
+}
+
+.mb-18 {
+    margin-bottom: 18rem;
+}
