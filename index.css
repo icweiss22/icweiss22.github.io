@@ -1,267 +1,17 @@
-﻿.navbar {
-    background-color: #fcf9d8!important;
-}
-
-    .navbar a {
-        color: #436fb6 !important;
-        font-weight: 700;
-    }
-
-.container-fluid {
-    display: flex;
-}
-
-section.full {
-    min-height: 100vh;
-}
-
-/*
-COLOR PALETTE
-https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
-#F7FFF7 - almost white
-#343434 - dark gray - almost black
-#2F3061 - blue dark
-#FFE66D - yellow
-#A1C6D7 - blue light
-*/
-
-/*
-    #5B5F97 - dark blue gray
-    #A3D5FF - baby blue eyes
-    #C5EBC3 - tea green
-    #F4A5AE - mauvelous
-    #FDF5BF - blond
-*/
-
-
-/* Global styles
+﻿/* Global Styles
 ------------------------------------*/
-
-.fixed-top {
-    position: sticky!important;
-}
-
-html {
-    box-sizing: border-box;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-body {
-    color: #343434;
-    margin: 0;
-    padding: 0;
-    font-family: 'Muli', sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-img {
-    width: 300px;
-}
-
-a {
-    color: blue;
-}
-
-    a:hover {
-        text-decoration: none;
-    }
-
-h1 {
-    font-size: 100px;
-    line-height: 1;
-}
-
-h2 {
-    font-size: 45px;
-}
-
-h1, h2 {
-    font-family: 'Muli', cursive;
-    font-weight: 400;
-    margin: 0;
-}
-
-.content-wrap {
-    /*max-width: 800px;*/
-    width: 85%;
-    margin: 0 auto;
-    padding: 60px 0;
-}
-
-h3 {
-    margin-bottom: 0;
-}
-
-.item-details h3 + p {
-    font-style: italic;
-}
-
-.item-details h3 ~ p {
-    margin: 0;
-}
-
-.divider > section {
-    border-bottom: 1px dashed #343434;
-    padding: 25px 0;
-}
-
-    .divider > section:last-of-type {
-        border-bottom: none;
-    }
-
-/* Profile
-------------------------------------*/
-header {
-    background: #2F3061;
-    color: #F7FFF7;
-}
-
-/* Projects
-------------------------------------*/
-#projects {
-    background: #F7FFF7;
-}
-
-    #projects a {
-        color: #2F3061;
-    }
-
-.project-item {
-    overflow: hidden;
-}
-
-    .project-item h3 {
-        margin-top: 0;
-    }
-/* Skills
-------------------------------------*/
-#skills {
-    background: #A1C6D7;
-}
-
-
-/* Work Experience
-------------------------------------*/
-#work-experience {
-    background: #A3D5FF;
-}
-
-
-
-/* Education
-------------------------------------*/
-#education {
-    /*background-image: url(../images/joanna-kosinska-unsplash.jpg);*/
-    background-size: cover;
-    background-position: top right;
-    padding-bottom: 100px;
-}
-
-    .education p {
-        width: 60%;
-    }
-
-
-/* Contact Info
-------------------------------------*/
-footer {
-    background: #343434;
-    color: #F7FFF7;
-}
-
-.contact-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-    .contact-list a {
-        padding: 15px;
-        display: inline-block;
-    }
-
-footer a {
-    color: white;
-}
-
-/* Responsive
-------------------------------------*/
-@media screen and (min-width:750px) {
-    header, footer {
-        text-align: center;
-    }
-
-    .project-item img {
-        float: left;
-        margin-right: 20px;
-    }
-
-/*    .job-item {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        column-gap: 20px;
-    }*/
-
-    .contact-list {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width:749px) {
-    h1 {
-        font-size: 75px;
-        line-height: 0.9;
-        margin-bottom: 20px;
-    }
-
-    h2 {
-        line-height: 1;
-    }
-
-    .contact-list a {
-        padding: 5px;
-    }
-}
-
 :root {
-    --bg-color: #FFF8E6;
-    --red-color: #CC312A;
-    --blue-color: #7FBFBD;
-    --orange-color: #de903c;
-    --yellow-color: #ffcc33;
+    --blue-color: #278ed7;
 }
 
 html {
     scroll-behavior: smooth;
-}
-
-@font-face {
-    font-family: Margins;
-    src: url('fonts/margins.otf');
-}
-
-section {
-    padding: 3rem 0rem;
-    background-size: 75vh;
-}
-
-nav.navbar {
-    z-index: 1;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    top: 0;
-    transition: top .3s;
+    font-family: 'Muli', sans-serif;
 }
 
 .bordered-card {
-    box-shadow: 1px 1px 0px 3px #3bb3b3 !important;
-    border-color: #6cdddd !important;
+    box-shadow: 1px 1px 0px 3px var(--blue-color) !important;
+    border-color: #9ed6fb !important;
     background-color: #ffffffe3;
     border-style: solid !important;
     border-width: 4px !important;
@@ -269,7 +19,60 @@ nav.navbar {
     border-top: 0px none !important;
 }
 
-#projects {
-    background: url(https://images.hdqwalls.com/download/simple-background-blur-xb-1920x1080.jpg) no-repeat center center fixed;
-    background-size: cover;
+main {
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f6b0bf93-bf66-4551-8b9b-b723ee634429/def0dfr-13c528d9-4fa3-4307-b04e-18359a6a27af.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y2YjBiZjkzLWJmNjYtNDU1MS04YjliLWI3MjNlZTYzNDQyOVwvZGVmMGRmci0xM2M1MjhkOS00ZmEzLTQzMDctYjA0ZS0xODM1OWE2YTI3YWYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.CtvTVjjnO1gfg__iJm2tGIa8KPJLe6CTDOpuyxQnMIg) no-repeat center center fixed;
+    background-size: 110%;
 }
+
+.navbar {
+    background-color: var(--blue-color)!important;
+}
+
+    .navbar a {
+        color: white !important;
+        font-weight: 700;
+    }
+
+    .navbar a:hover {
+        color: #dfdfdf!important;
+    }
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem!important;
+    padding-left: 1rem;
+}
+
+section.full {
+    min-height: 100vh;
+}
+
+.fixed-top {
+    position: sticky!important;
+}
+
+img {
+    width: 300px;
+}
+
+/* Profile
+------------------------------------*/
+
+
+/* Projects
+------------------------------------*/
+
+
+/* Skills
+------------------------------------*/
+
+
+/* Work Experience
+------------------------------------*/
+
+
+/* Education
+------------------------------------*/
+
+
+/* Contact Info
+------------------------------------*/
