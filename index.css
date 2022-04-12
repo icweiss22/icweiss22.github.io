@@ -116,11 +116,12 @@ nav a:hover::after {
     display: grid;
     grid-row-gap: 1rem;
     grid-column-gap: 15px;
-    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    justify-content: center;
 }
 
     .card-container.languages .card {
-        border-color: var(--yellow-color);
+        border-color: var(--blue-color);
     }
 
 .card-container .card {
@@ -129,12 +130,28 @@ nav a:hover::after {
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
 }
 
-.tech-image {
-    height: 8rem;
-    width: 8rem;
-}
-
 img {
     vertical-align: middle;
     border-style: none;
 }
+
+#grid-development {
+    grid-template-columns: 200px 200px 200px 200px 200px;
+}
+
+#grid-programming, #grid-collaboration {
+    grid-template-columns: 200px 200px 200px;
+}
+
+.cards-header-custom {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto Slab', serif;
+    vertical-align: middle;
+}
+
+    .cards-header-custom h2 {
+        font-size: 3rem !important;
+        border-bottom: 3px solid var(--blue-color);
+        margin-bottom: 3rem;
+    }
