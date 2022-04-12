@@ -25,7 +25,7 @@ main {
 }
 
 .navbar {
-    background-color: var(--blue-color)!important;
+    background-color: var(--blue-color) !important;
 }
 
     .navbar a {
@@ -33,12 +33,12 @@ main {
         font-weight: 700;
     }
 
-    .navbar a:hover {
-        color: #dfdfdf!important;
-    }
+        .navbar a:hover {
+            color: #dfdfdf !important;
+        }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 2rem!important;
+    padding-right: 2rem !important;
     padding-left: 1rem;
 }
 
@@ -47,7 +47,7 @@ section.full {
 }
 
 .fixed-top {
-    position: sticky!important;
+    position: sticky !important;
 }
 
 img {
@@ -76,3 +76,16 @@ img {
 
 /* Contact Info
 ------------------------------------*/
+
+footer {
+    color: white;
+    background-color: var(--blue-color);
+    padding: 1rem;
+    text-align: center;
+    font-size: medium;
+}
+
+    footer div a:hover {
+        color: white;
+        text-decoration: none;
+    }
