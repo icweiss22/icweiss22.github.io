@@ -112,3 +112,29 @@ nav a:hover::after {
         text-align:center;
     }
 
+.card-container.languages {
+    display: grid;
+    grid-row-gap: 1rem;
+    grid-column-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+}
+
+    .card-container.languages .card {
+        border-color: var(--yellow-color);
+    }
+
+.card-container .card {
+    border: none;
+    border-top-style: solid;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+}
+
+.tech-image {
+    height: 8rem;
+    width: 8rem;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
