@@ -34,7 +34,7 @@ main {
     }
 
         .navbar a:hover {
-            color: #dfdfdf !important;
+            color: #a6dafc !important;
         }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -89,3 +89,41 @@ footer {
         color: white;
         text-decoration: none;
     }
+
+
+nav a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #a6dafc;
+    position: relative;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #a6dafc;
+    position: relative;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+
+nav a:hover::before {
+    width: 100%;
+}
+
+    nav li {
+        display: inline-block;
+        position: relative;
+        text-align:center;
+    }
+
