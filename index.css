@@ -138,6 +138,16 @@ hr {
     grid-template-columns: repeat(3, var(--icon-size));
 }
 
+    #skills .card {
+        box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 8%);
+    }
+
+.bold-skills-headers {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--dark-blue-color);
+}
+
 /* Work Experience
 ------------------------------------*/
 #work-experience {
@@ -173,10 +183,8 @@ hr {
     border-radius: 0.5rem !important;
     border-left-width: thick;
     border-right-width: medium;
+    background-color: var(--light-blue-color)
 }
-
-
-
 
 .sub-work-experience {
     font-weight: lighter;
@@ -218,6 +226,7 @@ hr {
 
 /* Education
 ------------------------------------*/
+
 /* Contact Info
 ------------------------------------*/
 footer {
