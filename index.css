@@ -2,6 +2,7 @@
 ------------------------------------*/
 :root {
     --blue-color: #278ed7;
+    --icon-size: 175px;
 }
 
 html {
@@ -24,24 +25,6 @@ main {
     background-size: 110%;
 }
 
-.navbar {
-    background-color: var(--blue-color) !important;
-}
-
-    .navbar a {
-        color: white !important;
-        font-weight: 700;
-    }
-
-        .navbar a:hover {
-            color: #a6dafc !important;
-        }
-
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 2rem !important;
-    padding-left: 1rem;
-}
-
 section.full {
     min-height: 100vh;
 }
@@ -52,23 +35,99 @@ section.full {
 
 img {
     width: 300px;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.cards-header-custom {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto Slab', serif;
+    vertical-align: middle;
+}
+
+    .cards-header-custom h2 {
+        font-size: 3rem;
+        border-bottom: 3px solid var(--blue-color);
+        margin-bottom: 3rem;
+    }
+
+.subheader-custom {
+    font-size: 2.5rem !important;
+    color: var(--blue-color);
+    margin-bottom: 0rem;
+}
+
+.mb-18 {
+    margin-bottom: 18rem;
+}
+
+.cards-body-custom {
+    display: flex;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+}
+
+    .cards-body-custom p {
+        font-size: larger;
+    }
+
+hr {
+    color: var(--blue-color);
+    height: 2px !important;
 }
 
 /* Profile
 ------------------------------------*/
-
+#about .cards-header-custom h2 {
+    border-bottom: none;
+    margin-bottom: 0rem;
+    font-size: 5rem;
+}
 
 /* Projects
 ------------------------------------*/
 
 
-/* Skills
+/* Technologies
 ------------------------------------*/
+.card-container.languages {
+    display: grid;
+    grid-row-gap: 1rem;
+    grid-column-gap: 15px;
+    grid-template-columns: repeat(5, var(--icon-size));
+    justify-content: center;
+}
 
+    .card-container.languages .card {
+        border-color: var(--blue-color);
+    }
+
+.card-container .card {
+    border: none;
+    border-top-style: solid;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+}
+
+#grid-programming, #grid-collaboration {
+    grid-template-columns: repeat(3, var(--icon-size));
+}
 
 /* Work Experience
 ------------------------------------*/
+#work-experience .cards-header-custom {
+    justify-content: center;
+}
 
+#work-experience a {
+    color: var(--blue-color);
+}
+
+    #work-experience a:hover {
+        color: black;
+    }
 
 /* Education
 ------------------------------------*/
@@ -90,6 +149,25 @@ footer {
         text-decoration: none;
     }
 
+/* Navbar
+------------------------------------*/
+.navbar {
+    background-color: var(--blue-color) !important;
+}
+
+    .navbar a {
+        color: white !important;
+        font-weight: 700;
+    }
+
+        .navbar a:hover {
+            color: #a6dafc !important;
+        }
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem !important;
+    padding-left: 1rem;
+}
 
 nav a::after {
     content: '';
@@ -110,104 +188,4 @@ nav li {
     display: inline-block;
     position: relative;
     text-align: center;
-}
-
-.card-container.languages {
-    display: grid;
-    grid-row-gap: 1rem;
-    grid-column-gap: 15px;
-    grid-template-columns: 200px 200px 200px 200px 200px;
-    justify-content: center;
-}
-
-    .card-container.languages .card {
-        border-color: var(--blue-color);
-    }
-
-.card-container .card {
-    border: none;
-    border-top-style: solid;
-    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
-}
-
-img {
-    vertical-align: middle;
-    border-style: none;
-}
-
-#grid-development {
-    grid-template-columns: 200px 200px 200px 200px 200px;
-}
-
-#grid-programming, #grid-collaboration {
-    grid-template-columns: 200px 200px 200px;
-}
-
-.cards-header-custom {
-    display: flex;
-    justify-content: space-around;
-    font-family: 'Roboto Slab', serif;
-    vertical-align: middle;
-}
-
-    .cards-header-custom h2 {
-        font-size: 3rem ;
-        border-bottom: 3px solid var(--blue-color);
-        margin-bottom: 3rem;
-    }
-
-.subheader-custom {
-    font-size: 2.5rem !important;
-    color: var(--blue-color);
-    margin-bottom: 0rem ;
-}
-
-#about .cards-header-custom h2 {
-    border-bottom: none;
-    margin-bottom: 0rem;
-    font-size: 5rem;
-}
-
-#work-experience .cards-header-custom {
-    justify-content: center;
-}
-
-.nav-other {
-    color: var(--blue-color) !important;
-}
-
-.mb-18 {
-    margin-bottom: 18rem;
-}
-
-.cards-body-custom {
-    display: flex;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    margin-bottom: 3rem;
-    padding-top: 1rem;
-}
-
-.cards-body-custom p {
-    font-size: larger;
-}
-
-#about h3 {
-    box-shadow: 0 1em 1em -1em rgba(0, 0, 0, .25);
-    
-}
-
-hr {
-    color: var(--blue-color);
-    height: 2px!important;
-    
-}
-
-#work-experience a {
-    color: var(--blue-color);
-
-}
-
-#work-experience a:hover {
-    color: black;
 }
