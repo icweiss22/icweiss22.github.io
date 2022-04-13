@@ -1,5 +1,9 @@
 ﻿/* Global Styles
 ------------------------------------*/
+body {
+    position: relative;
+}
+
 :root {
     --blue-color: #278ed7;
     --icon-size: 175px;
@@ -89,6 +93,10 @@ hr {
     font-weight: bold;
 }
 
+.fw-normal {
+    font-weight: normal;
+}
+
 .quicksand {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
@@ -102,6 +110,10 @@ hr {
     margin-right: 0.4rem;
 }
 
+.cards-header-custom {
+    justify-content: center;
+}
+
 /* Profile
 ------------------------------------*/
 #about .cards-header-custom h2 {
@@ -109,10 +121,6 @@ hr {
     margin-bottom: 0rem;
     font-size: 5rem;
 }
-
-/* Projects
-------------------------------------*/
-
 
 /* Technologies
 ------------------------------------*/
@@ -138,9 +146,9 @@ hr {
     grid-template-columns: repeat(3, var(--icon-size));
 }
 
-    #skills .card {
-        box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 8%);
-    }
+#skills .card {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 8%);
+}
 
 .bold-skills-headers {
     font-size: 2rem;
@@ -159,21 +167,17 @@ hr {
         box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 8%);
     }
 
-#work-experience .cards-header-custom {
-    justify-content: center;
-}
-
-#work-experience a {
-    color: var(--blue-color);
-}
-
-    #work-experience a:hover {
-        color: black;
+    #work-experience a {
+        color: var(--blue-color);
     }
 
-#work-experience .card-container .card {
-    border-top-style: none;
-}
+        #work-experience a:hover {
+            color: black;
+        }
+
+    #work-experience .card-container .card {
+        border-top-style: none;
+    }
 
 .work-custom-body {
     border-bottom: 1px solid rgba(0,0,0,.125);
@@ -183,8 +187,13 @@ hr {
     border-radius: 0.5rem !important;
     border-left-width: thick;
     border-right-width: medium;
-    background-color: var(--light-blue-color)
+    background-color: var(--light-blue-color);
+    transition: all .2s ease-in-out;
 }
+
+    .work-custom-body:hover {
+        transform: scale(1.03);
+    }
 
 .sub-work-experience {
     font-weight: lighter;
@@ -197,8 +206,8 @@ hr {
     font-size: large;
 }
 
-#work-experience .list-group-item {
-    background-color: var(--light-blue-color)!important;
+.list-group-item {
+    background-color: var(--light-blue-color) !important;
 }
 
 .fa-caret-right {
@@ -221,11 +230,36 @@ hr {
     border-radius: 10rem;
     vertical-align: baseline;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s;
-    font-weight:700;
+    font-weight: 700;
 }
+
+/* Projects
+------------------------------------*/
+#projects {
+    font-family: 'Lato', sans-serif;
+}
+
+#pharmacy-link {
+    font-size: 1.3rem;
+    vertical-align: top;
+}
+
+
 
 /* Education
 ------------------------------------*/
+#education-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#education-flex .card {
+    height: auto;
+}
+
+#education-flex .work-custom-body {
+    height: 100%;
+}
 
 /* Contact Info
 ------------------------------------*/
@@ -282,3 +316,11 @@ nav li {
     position: relative;
     text-align: center;
 }
+
+a.nav-link {
+    border-radius: 0.5rem;
+}
+
+    a.nav-link.active {
+        background-color: var(--dark-blue-color);
+    }
