@@ -195,6 +195,14 @@ hr {
         transform: scale(1.03);
     }
 
+.skills-container-full .card {
+    transition: all .2s ease-in-out;
+}
+
+    .skills-container-full .card:hover {
+        transform: scale(1.1);
+    }
+
 .sub-work-experience {
     font-weight: lighter;
     font-size: smaller;
@@ -253,13 +261,13 @@ hr {
     justify-content: space-evenly;
 }
 
-#education-flex .card {
-    height: auto;
-}
+    #education-flex .card {
+        height: auto;
+    }
 
-#education-flex .work-custom-body {
-    height: 100%;
-}
+    #education-flex .work-custom-body {
+        height: 100%;
+    }
 
 /* Contact Info
 ------------------------------------*/
