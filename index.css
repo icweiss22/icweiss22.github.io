@@ -106,11 +106,11 @@ nav a:hover::after {
     width: 100%;
 }
 
-    nav li {
-        display: inline-block;
-        position: relative;
-        text-align:center;
-    }
+nav li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
 
 .card-container.languages {
     display: grid;
@@ -151,15 +151,63 @@ img {
 }
 
     .cards-header-custom h2 {
-        font-size: 3rem !important;
+        font-size: 3rem ;
         border-bottom: 3px solid var(--blue-color);
         margin-bottom: 3rem;
     }
 
+.subheader-custom {
+    font-size: 2.5rem !important;
+    color: var(--blue-color);
+    margin-bottom: 0rem ;
+}
+
+#about .cards-header-custom h2 {
+    border-bottom: none;
+    margin-bottom: 0rem;
+    font-size: 5rem;
+}
+
+#work-experience .cards-header-custom {
+    justify-content: center;
+}
+
 .nav-other {
-    color: var(--blue-color)!important;
+    color: var(--blue-color) !important;
 }
 
 .mb-18 {
     margin-bottom: 18rem;
+}
+
+.cards-body-custom {
+    display: flex;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+}
+
+.cards-body-custom p {
+    font-size: larger;
+}
+
+#about h3 {
+    box-shadow: 0 1em 1em -1em rgba(0, 0, 0, .25);
+    
+}
+
+hr {
+    color: var(--blue-color);
+    height: 2px!important;
+    
+}
+
+#work-experience a {
+    color: var(--blue-color);
+
+}
+
+#work-experience a:hover {
+    color: black;
 }
