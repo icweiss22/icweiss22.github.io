@@ -3,6 +3,8 @@
 :root {
     --blue-color: #278ed7;
     --icon-size: 175px;
+    --dark-blue-color: #1e3888;
+    --light-blue-color: #bbe2fc;
 }
 
 html {
@@ -79,6 +81,27 @@ hr {
     height: 2px !important;
 }
 
+.blue {
+    color: var(--dark-blue-color);
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.quicksand {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+.fa-calendar-alt {
+    margin-right: 0.4rem;
+}
+
+.fa-map-marked {
+    margin-right: 0.4rem;
+}
+
 /* Profile
 ------------------------------------*/
 #about .cards-header-custom h2 {
@@ -117,6 +140,15 @@ hr {
 
 /* Work Experience
 ------------------------------------*/
+#work-experience {
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+}
+
+    #work-experience .card {
+        box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 8%);
+    }
+
 #work-experience .cards-header-custom {
     justify-content: center;
 }
@@ -129,13 +161,65 @@ hr {
         color: black;
     }
 
+#work-experience .card-container .card {
+    border-top-style: none;
+}
+
+.work-custom-body {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: 1rem 1rem;
+    padding-bottom: 0;
+    border: 1px solid var(--dark-blue-color);
+    border-radius: 0.5rem !important;
+    border-left-width: thick;
+    border-right-width: medium;
+}
+
+
+
+
+.sub-work-experience {
+    font-weight: lighter;
+    font-size: smaller;
+    margin-left: 0.4rem !important;
+}
+
+#work-experience section {
+    background-color: var(--light-blue-color);
+    font-size: large;
+}
+
+#work-experience .list-group-item {
+    background-color: var(--light-blue-color)!important;
+}
+
+.fa-caret-right {
+    margin-right: 0.7rem;
+    color: var(--dark-blue-color);
+    vertical-align: middle;
+    font-size: 1.6rem;
+}
+
+#work-experience .badge-custom {
+    display: grid;
+    align-items: center;
+    background: var(--blue-color);
+    color: white;
+    padding: 0.4rem 0.7rem;
+    font-size: 90%;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 10rem;
+    vertical-align: baseline;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s;
+    font-weight:700;
+}
+
 /* Education
 ------------------------------------*/
-
-
 /* Contact Info
 ------------------------------------*/
-
 footer {
     color: white;
     background-color: var(--blue-color);
@@ -165,7 +249,7 @@ footer {
         }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 2rem !important;
+    padding-right: 1rem !important;
     padding-left: 1rem;
 }
 
