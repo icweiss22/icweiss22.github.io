@@ -5,11 +5,13 @@ $(document).ready(function () {
         target: '#sideNav'
     })
 
-
+    $(".accordion-toggle").mouseover(function () {
+        $(".accordion-toggle").trigger("click");
+    });
 });
 
 window.addEventListener('scroll', function () {
-    if (this.scrollY === 0) {
+    if (this.scrollY <= 40) {
         $('#about-nav-link').addClass('active');
     }
 

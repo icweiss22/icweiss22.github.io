@@ -9,6 +9,10 @@ body {
     --icon-size: 175px;
     --dark-blue-color: #1e3888;
     --light-blue-color: #bbe2fc;
+    --navbar-blue-color: #2755d7;
+    --light-green-color: #C1FFDD;
+    --dark-green-color: #014401;
+    --green-color: #27d770;
 }
 
 html {
@@ -114,6 +118,14 @@ hr {
     justify-content: center;
 }
 
+.dark-green {
+    color: var(--dark-green-color);
+}
+
+.ml-3 {
+    margin-left: 1rem!important;
+}
+
 /* Profile
 ------------------------------------*/
 #about .cards-header-custom h2 {
@@ -215,7 +227,7 @@ hr {
 }
 
 .list-group-item {
-    background-color: var(--light-blue-color) !important;
+    background-color: #00000000 !important;
 }
 
 .fa-caret-right {
@@ -225,7 +237,7 @@ hr {
     font-size: 1.6rem;
 }
 
-#work-experience .badge-custom {
+#work-experience .badge-custom, #education-flex .badge-custom {
     display: grid;
     align-items: center;
     background: var(--blue-color);
@@ -241,6 +253,20 @@ hr {
     font-weight: 700;
 }
 
+.work-custom-body-other {
+    background-color: var(--light-green-color);
+    border-color: var(--dark-green-color);
+}
+
+    .work-custom-body-other .badge-custom {
+        background-color: var(--green-color)!important;
+        color: var(--dark-green-color)!important;
+    }
+
+    .work-custom-body-other .fa-caret-right {
+        color: var(--dark-green-color);
+    }
+
 /* Projects
 ------------------------------------*/
 #projects {
@@ -251,6 +277,24 @@ hr {
     font-size: 1.3rem;
     vertical-align: top;
 }
+
+#projects-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+    #projects-flex .card {
+        height: auto;
+    }
+
+    #projects-flex .work-custom-body {
+        height: 100%;
+    }
+
+    #projects-flex .card {
+        background-color: #0000;
+        border: none;
+    }
 
 
 
@@ -267,6 +311,11 @@ hr {
 
     #education-flex .work-custom-body {
         height: 100%;
+    }
+
+    #education-flex .card {
+        background-color: #0000;
+        border: none;
     }
 
 /* Contact Info
@@ -287,7 +336,7 @@ footer {
 /* Navbar
 ------------------------------------*/
 .navbar {
-    background-color: var(--blue-color) !important;
+    background-color: var(--navbar-blue-color) !important;
 }
 
     .navbar a {
