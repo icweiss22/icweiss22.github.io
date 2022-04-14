@@ -10,7 +10,6 @@ $(document).ready(function () {
         $(this).parents('.accordion-item').find('.collapse').collapse('show');
         currentSection = this;
         setTimeout(function () {
-            debugger;
             $('button', $('.accordion-item h2')).not(currentSection).parents('.accordion-item').find('.collapse').collapse('hide');
         }, 500);
         

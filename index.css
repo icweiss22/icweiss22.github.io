@@ -139,6 +139,10 @@ hr {
     font-size: 5rem;
 }
 
+#about #custom-secondary h3 {
+    color: var(--navbar-blue-color);
+}
+
 /* Technologies
 ------------------------------------*/
 .card-container.languages {
@@ -192,6 +196,10 @@ hr {
         font-family: 'Muli', sans-serif;
         font-weight: bold;
     }
+
+#technologies-accordion .accordion-item .accordion-body .card {
+    cursor: pointer;
+}
 
 .accordion-button-blue:not(.collapsed) {
     background-color: #bbe2fc;
