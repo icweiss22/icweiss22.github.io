@@ -143,6 +143,12 @@ hr {
     color: var(--navbar-blue-color);
 }
 
+#chevron-down {
+    --fa-animation-duration: 1.4s;
+    --fa-animation-delay: 10s;
+    --fa-animation-iteration-count: 10;
+}
+
 /* Technologies
 ------------------------------------*/
 .card-container.languages {
@@ -416,7 +422,7 @@ hr {
 ------------------------------------*/
 footer {
     color: white;
-    background-color: var(--blue-color);
+    background-color: var(--navbar-blue-color);
     padding: 1rem;
     text-align: center;
     font-size: medium;
