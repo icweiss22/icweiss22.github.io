@@ -5,9 +5,11 @@ $(document).ready(function () {
         target: '#sideNav'
     })
 
-    $(".accordion-toggle").mouseover(function () {
-        $(".accordion-toggle").trigger("click");
+    $(".accordion-item h2").mouseover(function () {
+        $('accordion-item h2 button', ).not(this).trigger('click');
+        $('button', this).trigger("click");
     });
+
 });
 
 window.addEventListener('scroll', function () {

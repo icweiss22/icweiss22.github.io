@@ -35,8 +35,17 @@ main {
     background-size: 110%;
 }
 
-section.full {
+#about {
     min-height: 100vh;
+    margin-top: 0;
+}
+
+.accordion-body {
+    border-radius: 0 !important;
+}
+
+section.full, footer {
+    margin-top: 7rem
 }
 
 .fixed-top {
@@ -66,10 +75,6 @@ img {
     font-size: 2.5rem !important;
     color: var(--blue-color);
     margin-bottom: 0rem;
-}
-
-.mb-18 {
-    margin-bottom: 18rem;
 }
 
 .cards-body-custom {
@@ -123,7 +128,7 @@ hr {
 }
 
 .ml-3 {
-    margin-left: 1rem!important;
+    margin-left: 1rem !important;
 }
 
 /* Profile
@@ -166,6 +171,87 @@ hr {
     font-size: 2rem;
     font-weight: bold;
     color: var(--dark-blue-color);
+}
+
+#skills .work-custom-body {
+    border-radius: 0 !important;
+    border-top: 0;
+}
+
+    #skills .work-custom-body:hover {
+        transform: none;
+    }
+
+    .accordion-button {
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-family:'Roboto Slab', sans-serif;
+    }
+
+    .accordion-body h3 {
+        font-family: 'Muli', sans-serif;
+        font-weight: bold;
+    }
+
+.accordion-button-blue:not(.collapsed) {
+    background-color: #bbe2fc;
+    border: 2px solid var(--dark-blue-color);
+    border-bottom: 0;
+    border-left-width: thick;
+    border-right-width: medium;
+    color: var(--dark-blue-color);
+}
+
+.accordion-button-green:not(.collapsed) {
+    background-color: var(--light-green-color);
+    border: 2px solid var(--dark-green-color);
+    border-bottom: 0;
+    border-left-width: thick;
+    border-right-width: medium;
+    color: var(--dark-green-color);
+}
+.accordion-button-green {
+    background-color: var(--light-green-color);
+}
+
+.accordion-button-green:focus {
+    box-shadow: 0 0 0 0.1rem rgb(1 68 1 / 25%) !important;
+}
+
+.accordion-button-blue {
+    background-color: var(--light-blue-color);
+}
+
+.accordion-button-blue:focus {
+    box-shadow: 0 0 0 0.1rem rgb(30 56 136 / 25%) !important;
+}
+
+.accordion-button-blue.collapsed {
+    border: 1px solid var(--dark-blue-color);
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.accordion-button-green.collapsed {
+    border: 1px solid var(--dark-green-color);
+    border-top: 0;
+    border-bottom: 0;
+}
+
+#first-accordion-button {
+    border-top: 1px solid var(--dark-blue-color);
+}
+
+#last-accordion-button.collapsed {
+    border-bottom: 1px solid var(--dark-green-color);
+}
+
+#skills-programming-body .card, #skills-collaboration-body .card {
+    border-color: var(--dark-green-color);
+}
+
+#skills-development-body .card, #skills-tools-body .card {
+    border-color: var(--dark-blue-color);
 }
 
 /* Work Experience
@@ -259,8 +345,8 @@ hr {
 }
 
     .work-custom-body-other .badge-custom {
-        background-color: var(--green-color)!important;
-        color: var(--dark-green-color)!important;
+        background-color: var(--green-color) !important;
+        color: var(--dark-green-color) !important;
     }
 
     .work-custom-body-other .fa-caret-right {
@@ -362,7 +448,6 @@ nav a::after {
     width: 0%;
     transition: all ease-in-out 250ms;
 }
-
 
 nav a:hover::after {
     width: 100%;
