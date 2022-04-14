@@ -5,9 +5,15 @@ $(document).ready(function () {
         target: '#sideNav'
     })
 
-    $(".accordion-item h2").mouseover(function () {
-        $('accordion-item h2 button', ).not(this).trigger('click');
-        $('button', this).trigger("click");
+    var currentSection;
+    $('#skills [data-bs-toggle="collapse"]').mouseover(function () {
+        $(this).parents('.accordion-item').find('.collapse').collapse('show');
+        currentSection = this;
+        setTimeout(function () {
+            debugger;
+            $('button', $('.accordion-item h2')).not(currentSection).parents('.accordion-item').find('.collapse').collapse('hide');
+        }, 500);
+        
     });
 
 });
