@@ -30,7 +30,7 @@
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">SKILLS</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">PROJECTS</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">EDUCATION</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Resume.docx">RESUME</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Resume.pdf" target="_blank">RESUME</a></li>
             </ul>
         </div>
     </nav>
@@ -60,9 +60,9 @@
 
                     <div style="background-color: #000; height: 1px;" class="col-5"></div>
                     <div class="col-2 text-center">
-                        <div class="btn" style="cursor: initial;">
-                            <span class="fas fa-chevron-down fa-2x fa-bounce" id="chevron-down" aria-hidden="true"></span>
-                        </div>
+                        <a href="#work" class="btn" style="cursor: pointer;">
+                            <span class="fas fa-chevron-down fa-2x fa-bounce" id="work" aria-hidden="true"></span>
+                        </a>
                     </div>
                     <div style="background-color: #000; height: 1px;" class="col-5"></div>
                 </div>
@@ -171,31 +171,31 @@
                                                         <div class="card-container mt-3 languages pb-4">
                                                             <div onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/HTML', '_blank')" class="card" data-toggle="tooltip" data-placement="top" title="" data-original-title="HTML">
                                                                 <div class="card-body">
-                                                                    <img style="margin-left:0.6rem;" class="w-100" src="https://madison.engineer/images/html.png">
+                                                                    <img style="margin-left:0.6rem;" class="w-100" src="images/html.png">
                                                                 </div>
                                                                 <h3 class="card-title h5 text-center">HTML</h3>
                                                             </div>
                                                             <div onclick="window.open('https://www.w3.org/Style/CSS/Overview.en.html', '_blank')" class="card" data-toggle="tooltip" data-placement="top" title="" data-original-title="CSS">
                                                                 <div class="card-body">
-                                                                    <img style="margin-left: -0.5rem" class="w-100" src="https://madison.engineer/images/css.png">
+                                                                    <img style="margin-left: -0.5rem" class="w-100" src="images/css.png">
                                                                 </div>
                                                                 <h3 class="card-title h5 text-center">CSS</h3>
                                                             </div>
                                                             <div onclick="window.open('https://getbootstrap.com/', '_blank')" class="card" data-toggle="tooltip" data-placement="top" title="" data-original-title="Bootstrap">
                                                                 <div class="card-body">
-                                                                    <img style="margin-top: 1.1rem" class="w-100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png">
+                                                                    <img style="margin-top: 1.1rem" class="w-100" src="images/bootstrap.png">
                                                                 </div>
                                                                 <h3 class="card-title h5 text-center">Bootstrap</h3>
                                                             </div>
                                                             <div onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/JavaScript', '_blank')" class="card" data-toggle="tooltip" data-placement="top" title="" data-original-title="JavaScript">
                                                                 <div class="card-body">
-                                                                    <img class="w-100" src="https://madison.engineer/images/js.png">
+                                                                    <img class="w-100" src="images/javascript.png">
                                                                 </div>
                                                                 <h3 class="card-title h5 text-center">JavaScript</h3>
                                                             </div>
                                                             <div onclick="window.open('https://jquery.com/', '_blank')" class="card" data-toggle="tooltip" data-placement="top" title="" data-original-title="Jquery">
                                                                 <div class="card-body">
-                                                                    <img class="w-100" src="https://openjsf.org/wp-content/uploads/sites/84/2019/10/jquery-logo-vertical_large_square.png">
+                                                                    <img class="w-100" src="images/jquery.png">
                                                                 </div>
                                                                 <h3 class="card-title h5 text-center">jQuery</h3>
                                                             </div>
@@ -216,19 +216,19 @@
                                                         <div id="grid-programming" class="card-container mt-3 languages pb-4">
                                                             <div onclick="window.open('https://en.wikipedia.org/wiki/C_Sharp_(programming_language)', '_blank')" class="card" data-toggle="tooltip" data-placement="top" title="" data-original-title="C#">
                                                                 <div class="card-body">
-                                                                    <img class="w-100" src="https://cws.auburn.edu/cws/Content/Images/About/C-sharp.png">
+                                                                    <img class="w-100" src="images/csharp.png">
                                                                 </div>
                                                                 <h3 class="card-title h5 text-center">C#</h3>
                                                             </div>
                                                             <div onclick="window.open('https://en.wikipedia.org/wiki/C%2B%2B', '_blank')" class="card" data-toggle="tooltip" data-placement="top" title="" data-original-title="C++">
                                                                 <div class="card-body">
-                                                                    <img class="w-100" src="https://img.icons8.com/color/452/c-plus-plus-logo.png">
+                                                                    <img class="w-100" src="images/cplusplus.png">
                                                                 </div>
                                                                 <h3 class="card-title h5 text-center">C++</h3>
                                                             </div>
                                                             <div onclick="window.open('https://en.wikipedia.org/wiki/Java_(programming_language)', '_blank')" class="card" data-toggle="tooltip" data-placement="top" title="" data-original-title="Java">
                                                                 <div class="card-body">
-                                                                    <img class="w-100" src="https://i.pinimg.com/originals/f1/ea/a7/f1eaa7278f64e27128e062a3de918265.png">
+                                                                    <img class="w-100" src="images/java.png">
                                                                 </div>
                                                                 <h3 class="card-title h5 text-center">Java</h3>
                                                             </div>
@@ -249,31 +249,31 @@
                                                         <div id="grid-development" class="card-container mt-3 languages pb-4">
                                                             <div onclick="window.open('https://dotnet.microsoft.com/apps/aspnet', '_blank')" class="card" data-toggle="tooltip" data-placement="top" title="" data-original-title="ASP.NET">
                                                                 <div class="card-body">
-                                                                    <img class="w-100" src="https://peytongasink.dev/images/technologies/dotnet.svg">
+                                                                    <img class="w-100" src="images/aspnet.svg">
                                                                 </div>
                                                                 <h3 class="card-title h5 text-center">ASP.NET</h3>
                                                             </div>
                                                             <div onclick="window.open('https://visualstudio.microsoft.com/vs/', '_blank')" class="card" data-toggle="tooltip" data-placement="top" title="" data-original-title="Visual Studio">
                                                                 <div class="card-body">
-                                                                    <img class="w-100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Visual_Studio_2017_Logo.svg/1024px-Visual_Studio_2017_Logo.svg.png">
+                                                                    <img class="w-100" src="images/visualstudio.png">
                                                                 </div>
                                                                 <h3 class="card-title h5 text-center">Visual Studio</h3>
                                                             </div>
                                                             <div onclick="window.open('https://code.visualstudio.com/', '_blank')" class="card" data-toggle="tooltip" data-placement="top" title="" data-original-title="Visual Studio Code">
                                                                 <div class="card-body">
-                                                                    <img class="w-100" src="https://peytongasink.dev/images/technologies/vscode.svg">
+                                                                    <img class="w-100" src="images/vscode.svg">
                                                                 </div>
                                                                 <h3 class="card-title h5 text-center">VS Code</h3>
                                                             </div>
                                                             <div onclick="window.open('https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms?view=sql-server-ver15', '_blank')" class="card" data-toggle="tooltip" data-placement="top" title="" data-original-title="SQL">
                                                                 <div class="card-body">
-                                                                    <img class="w-100" src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg">
+                                                                    <img class="w-100" src="images/ssms.svg">
                                                                 </div>
                                                                 <h3 class="card-title h5 text-center">SSMS</h3>
                                                             </div>
                                                             <div onclick="window.open('https://github.com/', '_blank')" class="card" data-toggle="tooltip" data-placement="top" title="" data-original-title="GitHub">
                                                                 <div class="card-body">
-                                                                    <img class="w-100" src="https://peytongasink.dev/images/technologies/github.svg">
+                                                                    <img class="w-100" src="images/github.svg">
                                                                 </div>
                                                                 <h3 class="card-title h5 text-center">GitHub</h3>
                                                             </div>
@@ -294,19 +294,19 @@
                                                         <div id="grid-collaboration" class="card-container mt-3 languages pb-4">
                                                             <div onclick="window.open('https://products.office.com/en-us/microsoft-teams/group-chat-software', '_blank')" class="card" data-toggle="tooltip" data-placement="top" title="" data-original-title="Microsoft Teams">
                                                                 <div class="card-body">
-                                                                    <img class="w-100" src="https://peytongasink.dev/images/technologies/teams.svg">
+                                                                    <img class="w-100" src="images/teams.svg">
                                                                 </div>
                                                                 <h3 class="card-title h5 text-center">Microsoft Teams</h3>
                                                             </div>
                                                             <div onclick="window.open('https://www.atlassian.com/software/jira', '_blank')" class="card" data-toggle="tooltip" data-placement="top" title="" data-original-title="Jira">
                                                                 <div class="card-body">
-                                                                    <img class="w-100" src="https://peytongasink.dev/images/technologies/jira.svg">
+                                                                    <img class="w-100" src="images/jira.svg">
                                                                 </div>
                                                                 <h3 class="card-title h5 text-center">Jira</h3>
                                                             </div>
                                                             <div onclick="window.open('https://www.servicenow.com/', '_blank')" class="card" data-toggle="tooltip" data-placement="top" title="" data-original-title="Service Now">
                                                                 <div class="card-body">
-                                                                    <img class="w-100" src="https://peytongasink.dev/images/technologies/servicenow.svg">
+                                                                    <img class="w-100" src="images/servicenow.svg">
                                                                 </div>
                                                                 <h3 class="card-title h5 text-center">Service Now</h3>
                                                             </div>
@@ -391,30 +391,33 @@
                                 <div class="cards-header-custom"><h2>Education</h2></div>
 
                                 <div id="education-flex">
-                                    <section class="card">
-                                        <div class="work-custom-body w-75">
-                                            <h2 class="blue fw-bold">Auburn University</h2>
-                                            <span class="badge-custom d-inline-flex"><i class="fa-solid fa-map-marked"></i>AUBURN, AL</span>
-
-                                            <p>Samuel Ginn College of Engineering</p>
-                                            <p><i>Bachelor of Science, Computer Science</i></p>
-                                            <p><i>Minor: Business</i></p>
-                                            <p>August 2019 - December 2023</p>
-                                            <p>GPA: 3.96/4.00</p>
-                                            <p>Dean's List: All Semesters</p>
-                                            <p>Scholarships: Spirit of Auburn Presidential | Bonnie Arnall (2019) | ADTRAN (2020)</p>
+                                    <section id="auburn-university" class="card p-4 z-0">
+                                        <div class="work-custom-body z-1">
+                                            <i id="fa-graduation-cap-custom" class="fa-solid fa-graduation-cap z-2"></i>
+                                            <h2 class="blue fw-bold mb-3">Auburn University</h2>
+                                            <span class="badge-custom d-flex"><i class="fa-solid fa-map-marked"></i>Auburn, AL</span>
+                                            <span class="badge-custom d-flex mt-2"><i style="margin-right: 0.4rem;" class="fa-solid fa-school"></i>Samuel Ginn College of Engineering</span>
+                                            <span class="badge-custom d-flex mt-2"><i style="margin-right: 0.4rem;" class="fa-solid fa-graduation-cap"></i>Bachelor of Science, Computer Science</span>
+                                            <span class="badge-custom d-flex mt-2"><i style="margin-right: 0.4rem;" class="fa-solid fa-business-time"></i>Minor: Business</span>
+                                            <span class="badge-custom d-flex mt-2"><i style="margin-right: 0.4rem;" class="fa-solid fa-calendar"></i>August 2019 - December 2023</span>
+                                            <span class="badge-custom d-flex mt-2"><i style="margin-right: 0.4rem;" class="fa-solid fa-book"></i>GPA: 3.96/4.00</span>
+                                            <span class="badge-custom d-flex mt-2"><i style="margin-right: 0.4rem;" class="fa-solid fa-award"></i>Dean's List: All Semesters</span>
+                                            <hr>
+                                            <span class="badge-custom d-inline-flex"><i style="margin-right: 0.4rem;" class="fa-solid fa-sack-dollar"></i>Spirit of Auburn Presidential Scholarship</span>
+                                            <span class="badge-custom d-inline-flex mt-2"><i style="margin-right: 0.4rem;" class="fa-solid fa-sack-dollar"></i>Bonnie Arnall Scholarship</span>
+                                            <span class="badge-custom d-inline-flex mt-2 mb-3"><i style="margin-right: 0.4rem;" class="fa-solid fa-sack-dollar"></i>ADTRAN Scholarship</span>
                                         </div>
                                     </section>
 
-                                    <section class="card">
-                                        <div class="work-custom-body work-custom-body-other">
-                                            <h2 class="dark-green fw-bold">Auburn High School</h2>
-                                            <span class="badge-custom d-inline-flex"><i class="fa-solid fa-map-marked"></i>AUBURN, AL</span>
-
-                                            <p>Diploma, May 2019</p>
-                                            <p>GPA: 4.20</p>
-                                            <p>AP Scholar with Distinction</p>
-                                            <p>National Honor Society</p>
+                                    <section id="auburn-high-school" class="card p-4 z-0">
+                                        <div class="work-custom-body work-custom-body-other z-1">
+                                            <i id="fa-school-custom" class="fa-solid fa-school z-2"></i>
+                                            <h2 class="dark-green fw-bold mb-3">Auburn High School</h2>
+                                            <span class="badge-custom d-flex"><i class="fa-solid fa-map-marked"></i>Auburn, AL</span>
+                                            <span class="badge-custom d-flex mt-2"><i style="margin-right: 0.4rem;" class="fa-solid fa-graduation-cap"></i>Diploma, May 2019</span>
+                                            <span class="badge-custom d-flex mt-2"><i style="margin-right: 0.4rem;" class="fa-solid fa-book"></i>GPA: 4.20/4.00</span>
+                                            <span class="badge-custom d-flex mt-2"><i style="margin-right: 0.4rem;" class="fa-solid fa-award"></i>AP Scholar with Distinction</span>
+                                            <span class="badge-custom d-flex mt-2"><i style="margin-right: 0.4rem;" class="fa-solid fa-earth-americas"></i>National Honor Society</span>
                                         </div>
                                     </section>
                                 </div>

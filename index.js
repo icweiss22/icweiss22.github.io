@@ -1,7 +1,7 @@
 $(document).ready(function () {
     AOS.init();
 
-    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+    new bootstrap.ScrollSpy(document.body, {
         target: '#sideNav'
     })
 

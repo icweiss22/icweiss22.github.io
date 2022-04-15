@@ -12,7 +12,7 @@ body {
     --navbar-blue-color: #2755d7;
     --light-green-color: #C1FFDD;
     --dark-green-color: #014401;
-    --green-color: #27d770;
+    --green-color: #27d770; 
 }
 
 html {
@@ -131,8 +131,29 @@ hr {
     margin-left: 1rem !important;
 }
 
+.badge-custom {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.1rem!important;
+}
+
+.z-0 {
+    z-index: 0;
+}
+
+.z-1 {
+    z-index: -1;
+}
+
+.z-2 {
+    z-index: -2;
+}
+
 /* Profile
 ------------------------------------*/
+#about {
+    margin-top: 0;
+}
+
 #about .cards-header-custom h2 {
     border-bottom: none;
     margin-bottom: 0rem;
@@ -143,11 +164,110 @@ hr {
     color: var(--navbar-blue-color);
 }
 
-#chevron-down {
+#work {
     --fa-animation-duration: 1.4s;
-    --fa-animation-delay: 10s;
+    --fa-animation-delay: 5s;
     --fa-animation-iteration-count: 10;
 }
+
+/* Work Experience
+------------------------------------*/
+#work-experience {
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+}
+
+    #work-experience .card {
+        box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 8%);
+    }
+
+    #work-experience a {
+        color: var(--blue-color);
+    }
+
+        #work-experience a:hover {
+            color: black;
+        }
+
+    #work-experience .card-container .card {
+        border-top-style: none;
+    }
+
+.work-custom-body {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: 1rem 1rem;
+    padding-bottom: 0;
+    border: 1px solid var(--dark-blue-color);
+    border-radius: 0.5rem !important;
+    border-left-width: thick;
+    border-right-width: medium;
+    background-color: var(--light-blue-color);
+    transition: all .2s ease-in-out;
+}
+
+    .work-custom-body:hover {
+        transform: scale(1.03);
+    }
+
+.skills-container-full .card {
+    transition: all .2s ease-in-out;
+}
+
+    .skills-container-full .card:hover {
+        transform: scale(1.1);
+    }
+
+.sub-work-experience {
+    font-weight: lighter;
+    font-size: smaller;
+    margin-left: 0.4rem !important;
+}
+
+#work-experience section {
+    background-color: var(--light-blue-color);
+    font-size: large;
+}
+
+.list-group-item {
+    background-color: #00000000 !important;
+}
+
+.fa-caret-right {
+    margin-right: 0.7rem;
+    color: var(--dark-blue-color);
+    vertical-align: middle;
+    font-size: 1.6rem;
+}
+
+#work-experience .badge-custom, #education-flex .badge-custom {
+    display: grid;
+    align-items: center;
+    background: var(--blue-color);
+    color: white;
+    padding: 0.4rem 0.7rem;
+    font-size: 90%;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 10rem;
+    vertical-align: baseline;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s;
+    font-weight: 700;
+}
+
+.work-custom-body-other {
+    background-color: var(--light-green-color);
+    border-color: var(--dark-green-color);
+}
+
+    .work-custom-body-other .badge-custom {
+        background-color: var(--green-color) !important;
+        color: var(--dark-green-color) !important;
+    }
+
+    .work-custom-body-other .fa-caret-right {
+        color: var(--dark-green-color);
+    }
 
 /* Technologies
 ------------------------------------*/
@@ -262,110 +382,13 @@ hr {
 
 #skills-programming-body .card, #skills-collaboration-body .card {
     border-color: var(--dark-green-color);
+    border-width: thick;
 }
 
 #skills-development-body .card, #skills-tools-body .card {
     border-color: var(--dark-blue-color);
+    border-width: thick;
 }
-
-/* Work Experience
-------------------------------------*/
-#work-experience {
-    font-family: 'Lato', sans-serif;
-    font-size: large;
-}
-
-    #work-experience .card {
-        box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 8%);
-    }
-
-    #work-experience a {
-        color: var(--blue-color);
-    }
-
-        #work-experience a:hover {
-            color: black;
-        }
-
-    #work-experience .card-container .card {
-        border-top-style: none;
-    }
-
-.work-custom-body {
-    border-bottom: 1px solid rgba(0,0,0,.125);
-    padding: 1rem 1rem;
-    padding-bottom: 0;
-    border: 1px solid var(--dark-blue-color);
-    border-radius: 0.5rem !important;
-    border-left-width: thick;
-    border-right-width: medium;
-    background-color: var(--light-blue-color);
-    transition: all .2s ease-in-out;
-}
-
-    .work-custom-body:hover {
-        transform: scale(1.03);
-    }
-
-.skills-container-full .card {
-    transition: all .2s ease-in-out;
-}
-
-    .skills-container-full .card:hover {
-        transform: scale(1.1);
-    }
-
-.sub-work-experience {
-    font-weight: lighter;
-    font-size: smaller;
-    margin-left: 0.4rem !important;
-}
-
-#work-experience section {
-    background-color: var(--light-blue-color);
-    font-size: large;
-}
-
-.list-group-item {
-    background-color: #00000000 !important;
-}
-
-.fa-caret-right {
-    margin-right: 0.7rem;
-    color: var(--dark-blue-color);
-    vertical-align: middle;
-    font-size: 1.6rem;
-}
-
-#work-experience .badge-custom, #education-flex .badge-custom {
-    display: grid;
-    align-items: center;
-    background: var(--blue-color);
-    color: white;
-    padding: 0.4rem 0.7rem;
-    font-size: 90%;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    border-radius: 10rem;
-    vertical-align: baseline;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s;
-    font-weight: 700;
-}
-
-.work-custom-body-other {
-    background-color: var(--light-green-color);
-    border-color: var(--dark-green-color);
-}
-
-    .work-custom-body-other .badge-custom {
-        background-color: var(--green-color) !important;
-        color: var(--dark-green-color) !important;
-    }
-
-    .work-custom-body-other .fa-caret-right {
-        color: var(--dark-green-color);
-    }
 
 /* Projects
 ------------------------------------*/
@@ -385,18 +408,14 @@ hr {
 
     #projects-flex .card {
         height: auto;
+        width: fit-content;
+        background-color: #0000;
+        border: none;
     }
 
     #projects-flex .work-custom-body {
         height: 100%;
     }
-
-    #projects-flex .card {
-        background-color: #0000;
-        border: none;
-    }
-
-
 
 /* Education
 ------------------------------------*/
@@ -407,15 +426,47 @@ hr {
 
     #education-flex .card {
         height: auto;
+        width: -webkit-fill-available;
+        background-color: #0000;
+        border: none;
     }
 
     #education-flex .work-custom-body {
         height: 100%;
     }
 
-    #education-flex .card {
-        background-color: #0000;
-        border: none;
+    #fa-school-custom {
+        position: absolute;
+        font-size: 20rem;
+        color: #27d7704a;
+        left: 10.7rem;
+        top: 10.9rem;
+    }
+
+    #fa-graduation-cap-custom {
+        position: absolute;
+        font-size: 20rem;
+        color: #278ed74a;
+        left: 10.8rem;
+        top: 12.1rem;
+    }
+
+    #education .badge-custom {
+        width: fit-content;
+    }
+
+    #education .work-custom-body:hover {
+        transform: none;
+    }
+
+    #education-flex #auburn-university .badge-custom {
+        background-color: #71b8ea!important;
+        color: var(--dark-blue-color);
+        border: 1px inset var(--dark-blue-color);
+    }
+
+    #education-flex #auburn-high-school .badge-custom {
+        border: 1px inset var(--dark-green-color);
     }
 
 /* Contact Info
