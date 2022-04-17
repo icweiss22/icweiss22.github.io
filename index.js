@@ -11,7 +11,7 @@ $(document).ready(function () {
         currentSection = this;
         setTimeout(function () {
             $('button', $('.accordion-item h2')).not(currentSection).parents('.accordion-item').find('.collapse').collapse('hide');
-        }, 500);
+        }, 400);
         
     });
 

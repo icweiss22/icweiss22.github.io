@@ -98,14 +98,6 @@ hr {
     color: var(--dark-blue-color);
 }
 
-.fw-bold {
-    font-weight: bold;
-}
-
-.fw-normal {
-    font-weight: normal;
-}
-
 .quicksand {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
@@ -275,7 +267,7 @@ hr {
     display: grid;
     grid-row-gap: 1rem;
     grid-column-gap: 15px;
-    grid-template-columns: repeat(5, var(--icon-size));
+    grid-template-columns: repeat( auto-fit, var(--icon-size) );
     justify-content: center;
 }
 
@@ -287,10 +279,6 @@ hr {
     border: none;
     border-top-style: solid;
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
-}
-
-#grid-programming, #grid-collaboration {
-    grid-template-columns: repeat(3, var(--icon-size));
 }
 
 #skills .card {
@@ -390,13 +378,13 @@ hr {
     border-width: thick;
 }
 
-/* Projects
-------------------------------------*/
-#projects {
-    font-family: 'Lato', sans-serif;
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
-#pharmacy-link {
+/* Projects
+------------------------------------*/
+#pharmacy-link, #ht-link {
     font-size: 1.3rem;
     vertical-align: top;
 }
@@ -416,6 +404,23 @@ hr {
     #projects-flex .work-custom-body {
         height: 100%;
     }
+
+a.dark-green:hover {
+    color: var(--green-color);
+    text-decoration: none;
+}
+
+#pharmacy-link, #ht-link, .cards-header-custom a {
+    text-decoration: none;
+}
+
+.project-header {
+    font-size: 1.7rem;
+}
+
+.project-body {
+    font-size: large;
+}
 
 /* Education
 ------------------------------------*/
