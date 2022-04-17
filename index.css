@@ -44,8 +44,12 @@ main {
     border-radius: 0 !important;
 }
 
-section.full, footer {
-    margin-top: 7rem
+section.full {
+    padding-top: 7rem;
+}
+
+footer {
+    margin-top: 7rem;
 }
 
 .fixed-top {
@@ -427,7 +431,12 @@ a.dark-green:hover {
 #education-flex {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
 }
+
+    #education-flex .badge-custom i {
+        margin-right: 0.4rem;
+    }
 
     #education-flex .card {
         height: auto;
@@ -442,18 +451,18 @@ a.dark-green:hover {
 
     #fa-school-custom {
         position: absolute;
-        font-size: 20rem;
+        font-size: 13.2rem;
         color: #27d7704a;
-        left: 10.7rem;
-        top: 10.9rem;
+        right: 0;
+        bottom: 0;
     }
 
     #fa-graduation-cap-custom {
         position: absolute;
-        font-size: 20rem;
+        font-size: 13.2rem;
         color: #278ed74a;
-        left: 10.8rem;
-        top: 12.1rem;
+        right: 0.2rem;
+        top: 3.5rem;
     }
 
     #education .badge-custom {
@@ -466,12 +475,12 @@ a.dark-green:hover {
 
     #education-flex #auburn-university .badge-custom {
         background-color: #71b8ea!important;
-        color: var(--dark-blue-color);
-        border: 1px inset var(--dark-blue-color);
+        color: #081b55;
+        border: 1.5px solid var(--dark-blue-color)
     }
 
     #education-flex #auburn-high-school .badge-custom {
-        border: 1px inset var(--dark-green-color);
+        border: 1.5px solid var(--dark-green-color);
     }
 
 /* Contact Info
@@ -536,3 +545,15 @@ a.nav-link {
     a.nav-link.active {
         background-color: var(--dark-blue-color);
     }
+
+/* Responsive
+------------------------------------*/
+@media (max-width: 1200px) {
+    main {
+        background: #bbe2fcaa;
+    }
+
+    #fa-graduation-cap-custom {
+        top: 11rem;
+    }
+}
