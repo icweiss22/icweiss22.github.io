@@ -10,9 +10,10 @@ body {
     --dark-blue-color: #1e3888;
     --light-blue-color: #bbe2fc;
     --navbar-blue-color: #2755d7;
-    --light-green-color: #C1FFDD;
-    --dark-green-color: #014401;
-    --green-color: #27d770;
+    /* These three used to be the secondary design for the website, now these are blue but names are still 'green'*/
+    --light-green-color: #f3faff;
+    --green-color: #adcee6;
+    --dark-green-color: #004778;
 }
 
 html {
@@ -217,6 +218,10 @@ hr {
     margin-right: 0.5rem;
 }
 
+.ml-4 {
+    margin-left: 1.5rem;
+}
+
 /* Work Experience
 ------------------------------------*/
 #work-experience {
@@ -308,8 +313,8 @@ hr {
 }
 
     .work-custom-body-other .badge-custom {
-        background-color: var(--green-color) !important;
-        color: var(--dark-green-color) !important;
+        background-color: var(--dark-green-color)!important;
+        color: white!important;
     }
 
     .work-custom-body-other .fa-caret-right {
@@ -504,7 +509,7 @@ a.dark-green:hover {
 #fa-school-custom {
     position: absolute;
     font-size: 13.2rem;
-    color: #27d7704a;
+    color: #278ed74a;
     right: 0;
     bottom: 0;
 }
@@ -522,13 +527,13 @@ a.dark-green:hover {
 }
 
 #education-flex #auburn-university .badge-custom {
-    background-color: #71b8ea !important;
-    color: #081b55;
+    background-color: var(--light-green-color);
+    color: var(--dark-green-color);
     border: 1.5px solid var(--dark-blue-color)
 }
 
 #education-flex #auburn-high-school .badge-custom {
-    border: 1.5px solid var(--dark-green-color);
+    border: 1.5px solid var(--dark-green-color)!important;
 }
 
 /* Contact Info
