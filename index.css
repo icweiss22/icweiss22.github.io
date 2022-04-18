@@ -147,7 +147,7 @@ hr {
     margin-top: 0;
 }
 
-    #about .cards-header-custom h2 {
+    #about .cards-header-custom h1 {
         border-bottom: none;
         margin-bottom: 0rem;
         font-size: 5rem;
@@ -294,7 +294,7 @@ hr {
 #work-experience .badge-custom, #education-flex .badge-custom {
     display: grid;
     align-items: center;
-    background: var(--blue-color);
+    background: #195B98;
     color: white;
     padding: 0.4rem 0.7rem;
     font-size: 90%;
@@ -313,8 +313,8 @@ hr {
 }
 
     .work-custom-body-other .badge-custom {
-        background-color: var(--dark-green-color)!important;
-        color: white!important;
+        background-color: #195B98 !important;
+        color: white !important;
     }
 
     .work-custom-body-other .fa-caret-right {
