@@ -46,9 +46,9 @@
                                 <div class="cards-header-custom"><h2>Isaac Weiss</h2></div>
                                 <div class="cards-header-custom" id="custom-secondary"><h3 class="subheader-custom">Full-stack Developer</h3></div>
                                 <hr />
-                                <div class="cards-body-custom">
+                                <div id="about-body" class="cards-body-custom">
                                     <p>
-                                        Hi! I'm an Auburn University senior majoring in Computer Science while also co-oping at Campus Web Solutions. I am passionate about software development, with a heavy focus on web development in the .NET ecosystem.
+                                        Hi! I'm an Auburn University senior majoring in Computer Science while also co-oping at <a id="about-cws" href="https://cws.auburn.edu/cws" target="_blank">Campus Web Solutions.</a> I'm passionate about software development, with a heavy focus on web development in the .NET ecosystem.
                                     </p>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@
                             <div class="card-body card-container p-5">
                                 <div class="cards-header-custom">
                                     <h2>Work Experience</h2>
-                                    <a href="https://www.linkedin.com/in/isaac-weiss-a06444168/" target="_blank" class="fas fa-external-link-alt"></a>
+                                    <a data-toggle="tooltip" title="Check out my LinkedIn!" href="https://www.linkedin.com/in/isaac-weiss-a06444168/" target="_blank" class="fas fa-external-link-alt"></a>
                                 </div>
 
                                 <!-- Job 1 -->
@@ -334,6 +334,7 @@
                             <div class="card-body p-5">
                                 <div class="cards-header-custom">
                                     <h2>Featured Projects</h2>
+                                    <a data-toggle="tooltip" title="Check out my GitHub!" href="https://github.com/icweiss22" target="_blank" class="fas fa-external-link-alt"></a>
                                 </div>
 
                                 <div id="projects-flex">
@@ -343,12 +344,12 @@
                                                 University Event Ticketing
                                             </h2>
                                             <div class="quicksand my-4 project-body">
-                                                Auburn University Event Ticketing is Auburn University’s primary strategy for adding, tracking, and sending tickets and parking passes (records) between departments, for use with any event. 
-                                                Department administrators are allowed to add records to the system, upload from a spreadsheet, edit record fields (type, price, etc.), and charge a user based on that records’ price. 
+                                                Auburn University Event Ticketing is Auburn University’s primary strategy for adding, tracking, and sending tickets and parking passes (records) between departments, for use with any event.
+                                                Department administrators are allowed to add records to the system, upload from a spreadsheet, edit record fields (type, price, etc.), and charge a user based on that records’ price.
                                                 Users are also able to send, accept, and deny records sent from other units, while being able to see an audit trail for each individual record.
                                                 <br><br>
-                                                Led development of the Reports Hub, viewable by anyone with site access. These included Ticket Reports and Parking Reports, which were able to be filtered down by date, type, unit, etc. and downloaded to an Excel spreadsheet. 
-                                                Also developed the Event Details report which included all records for a specific event, and the User Report which listed everyone who had site access and their privileges in an easy-to-read table. Also developed the feature to bulk edit tickets and parking passes. 
+                                                Led development of the Reports Hub, viewable by anyone with site access. These included Ticket Reports and Parking Reports, which were able to be filtered down by date, type, unit, etc. and downloaded to an Excel spreadsheet.
+                                                Also developed the Event Details report which included all records for a specific event, and the User Report which listed everyone who had site access and their privileges in an easy-to-read table. Also developed the feature to bulk edit tickets and parking passes.
                                                 Worked on other miscellanous site-wide features and bug fixes.
                                             </div>
                                         </div>
@@ -358,14 +359,14 @@
                                         <div class="work-custom-body work-custom-body-other">
                                             <h2 class="dark-green fw-bold justify-content-center project-header">
                                                 Pharmacy Scheduler
-                                                <a href="https://cws.auburn.edu/PharmacyScheduler" target="_blank" id="pharmacy-link" class="fas fa-external-link-alt dark-green"></a>
+                                                <a data-toggle="tooltip" title="Check out Pharmacy Scheduler!" href="https://cws.auburn.edu/PharmacyScheduler" target="_blank" id="pharmacy-link" class="fas fa-external-link-alt dark-green"></a>
                                                 and Healthy Tigers
                                             </h2>
                                             <div class="quicksand my-4 project-body">
-                                                Pharmacy Scheduler is Auburn University’s COVID Testing and Vaccination strategy throughout the COVID-19 pandemic. Pharmacy Scheduler is an appointment management system for Auburn students, faculty, staff, and since it is public-facing, community members as well. 
-                                                Admin have the ability to create, edit, and delete clinical events that appointments may be scheduled for. Admin also have the ability to manually add appointments, edit email templates for different appointment situations, and send emails for missed appointments. 
+                                                Pharmacy Scheduler is Auburn University’s COVID Testing and Vaccination strategy throughout the COVID-19 pandemic. Pharmacy Scheduler is an appointment management system for Auburn students, faculty, staff, and since it is public-facing, community members as well.
+                                                Admin have the ability to create, edit, and delete clinical events that appointments may be scheduled for. Admin also have the ability to manually add appointments, edit email templates for different appointment situations, and send emails for missed appointments.
                                                 <br><br>
-                                                Healthy Tigers is Auburn University’s employee wellness program. Through Healthy Tigers, Auburn employees and their spouses can schedule health screening appointments to earn an insurance premium discount. 
+                                                Healthy Tigers is Auburn University’s employee wellness program. Through Healthy Tigers, Auburn employees and their spouses can schedule health screening appointments to earn an insurance premium discount.
                                                 Healthy Tigers initally began as a part of Pharmacy Scheduler, but was later split into its own project. Healthy Tigers communicates with the Auburn employee/spouses’ insurance information to autofill certain fields when creating appointments.
                                                 I developed new features and bug fixes for Releases 5, 6, and 7 in both projects.
                                             </div>
@@ -379,9 +380,9 @@
                                                 <a href="https://www.auburn.edu/administration/human_resources/benefits/healthy-tigers/" target="_blank" id="ht-link" class="fas fa-external-link-alt blue"></a>
                                             </h2>
                                             <div class="quicksand my-4">
-                                                Healthy Tigers is Auburn University’s employee wellness program. The Healthy Tigers web application allows Auburn employees and their spouses to schedule health screening appointments each calendar year and receive discounts. 
-                                                Healthy Tigers initally began as feature on CWS’ Pharmacy Scheduler project, but was split into its own project to reconcile the growing differences between the two projects. Healthy Tigers communicates with the Auburn employee/spouses’ insurance information to schedule an appointment. 
-                                                Admin have the ability to create, edit, and delete existing Healthy Tigers events. Admin also have the ability to manually add appointments, edit email templates for different appointment situations, and send emails for missed appointments. 
+                                                Healthy Tigers is Auburn University’s employee wellness program. The Healthy Tigers web application allows Auburn employees and their spouses to schedule health screening appointments each calendar year and receive discounts.
+                                                Healthy Tigers initally began as feature on CWS’ Pharmacy Scheduler project, but was split into its own project to reconcile the growing differences between the two projects. Healthy Tigers communicates with the Auburn employee/spouses’ insurance information to schedule an appointment.
+                                                Admin have the ability to create, edit, and delete existing Healthy Tigers events. Admin also have the ability to manually add appointments, edit email templates for different appointment situations, and send emails for missed appointments.
                                                 Developed new features and bug fixes for Healthy Tigers Releases 5, 6, and 7.
                                             </div>
                                         </div>
@@ -401,7 +402,10 @@
                     <div class="col-12">
                         <div class="card bordered-card">
                             <div class="card-body p-5">
-                                <div class="cards-header-custom"><h2>Education</h2></div>
+                                <div class="cards-header-custom">
+                                    <h2>Education</h2>
+                                    <a data-toggle="tooltip" title="Check out my curriculum!" href="https://bulletin.auburn.edu/undergraduate/samuelginncollegeofengineering/departmentofcomputerscienceandsoftwareengineering/computerscience_major/" target="_blank" class="fas fa-external-link-alt"></a>
+                                </div>
 
                                 <div id="education-flex">
                                     <section id="auburn-university" class="card mx-5 mb-3 z-0">
@@ -451,7 +455,7 @@
         <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
         <footer class="px-5">
             <div>Website by Isaac Weiss</div>
-            <a class="text-white" href=mailto:weissic@att.net>weissic@att.net</a>
+            <a data-toggle="tooltip" title="Send me an email!" class="text-white" href=mailto:weissic@att.net>weissic@att.net</a>
             <div>
                 Background found on <a class="text-white" href="https://www.pexels.com/" title="Pexels"><i>pexels.com</i></a>
             </div>
@@ -462,6 +466,7 @@
 
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://kit.fontawesome.com/38876ac839.js" crossorigin="anonymous"></script>

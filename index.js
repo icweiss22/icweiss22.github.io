@@ -12,7 +12,11 @@ $(document).ready(function () {
         setTimeout(function () {
             $('button', $('.accordion-item h2')).not(currentSection).parents('.accordion-item').find('.collapse').collapse('hide');
         }, 400);
-        
+    });
+
+    $('[data-toggle="tooltip"]').tooltip({
+        animation: true,
+        trigger: 'hover focus',
     });
 
 });

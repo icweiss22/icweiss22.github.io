@@ -12,7 +12,7 @@ body {
     --navbar-blue-color: #2755d7;
     --light-green-color: #C1FFDD;
     --dark-green-color: #014401;
-    --green-color: #27d770; 
+    --green-color: #27d770;
 }
 
 html {
@@ -129,7 +129,7 @@ hr {
 
 .badge-custom {
     font-family: 'Muli', sans-serif;
-    font-size: 1.1rem!important;
+    font-size: 1.1rem !important;
 }
 
 .z-0 {
@@ -144,27 +144,53 @@ hr {
     z-index: -2;
 }
 
+.cards-header-custom a {
+    font-size: x-large;
+    margin-left: 0.25rem;
+}
+
 /* Profile
 ------------------------------------*/
 #about {
     margin-top: 0;
 }
 
-#about .cards-header-custom h2 {
-    border-bottom: none;
-    margin-bottom: 0rem;
-    font-size: 5rem;
-}
+    #about .cards-header-custom h2 {
+        border-bottom: none;
+        margin-bottom: 0rem;
+        font-size: 5rem;
+    }
 
-#about #custom-secondary h3 {
-    color: var(--navbar-blue-color);
-}
+    #about #custom-secondary h3 {
+        color: var(--navbar-blue-color);
+    }
 
 #work {
     --fa-animation-duration: 1.4s;
     --fa-animation-delay: 5s;
     --fa-animation-iteration-count: 10;
 }
+
+#about-cws {
+    text-decoration: none;
+    color: var(--navbar-blue-color);
+}
+
+#about-cws:hover {
+    color: var(--blue-color);
+}
+
+#about-body {
+    font-family: 'Muli', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+.tooltip {
+    font-size: medium;
+}
+
+
 
 /* Work Experience
 ------------------------------------*/
@@ -304,16 +330,16 @@ hr {
         transform: none;
     }
 
-    .accordion-button {
-        font-size: 1.3rem;
-        font-weight: bold;
-        font-family:'Roboto Slab', sans-serif;
-    }
+.accordion-button {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Roboto Slab', sans-serif;
+}
 
-    .accordion-body h3 {
-        font-family: 'Muli', sans-serif;
-        font-weight: bold;
-    }
+.accordion-body h3 {
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+}
 
 #technologies-accordion .accordion-item .accordion-body .card {
     cursor: pointer;
@@ -336,27 +362,28 @@ hr {
     border-right-width: medium;
     color: var(--dark-green-color);
 }
+
 .accordion-button-green {
     background-color: var(--light-green-color);
 }
 
-.accordion-button-green:focus {
-    box-shadow: 0 0 0 0.1rem rgb(1 68 1 / 25%) !important;
-}
+    .accordion-button-green:focus {
+        box-shadow: 0 0 0 0.1rem rgb(1 68 1 / 25%) !important;
+    }
 
 .accordion-button-blue {
     background-color: var(--light-blue-color);
 }
 
-.accordion-button-blue:focus {
-    box-shadow: 0 0 0 0.1rem rgb(30 56 136 / 25%) !important;
-}
+    .accordion-button-blue:focus {
+        box-shadow: 0 0 0 0.1rem rgb(30 56 136 / 25%) !important;
+    }
 
-.accordion-button-blue.collapsed {
-    border: 1px solid var(--dark-blue-color);
-    border-top: 0;
-    border-bottom: 0;
-}
+    .accordion-button-blue.collapsed {
+        border: 1px solid var(--dark-blue-color);
+        border-top: 0;
+        border-bottom: 0;
+    }
 
 .accordion-button-green.collapsed {
     border: 1px solid var(--dark-green-color);
@@ -449,39 +476,39 @@ a.dark-green:hover {
         height: 100%;
     }
 
-    #fa-school-custom {
-        position: absolute;
-        font-size: 13.2rem;
-        color: #27d7704a;
-        right: 0;
-        bottom: 0;
-    }
+#fa-school-custom {
+    position: absolute;
+    font-size: 13.2rem;
+    color: #27d7704a;
+    right: 0;
+    bottom: 0;
+}
 
-    #fa-graduation-cap-custom {
-        position: absolute;
-        font-size: 13.2rem;
-        color: #278ed74a;
-        right: 0.2rem;
-        top: 3.5rem;
-    }
+#fa-graduation-cap-custom {
+    position: absolute;
+    font-size: 13.2rem;
+    color: #278ed74a;
+    right: 0.2rem;
+    top: 3.5rem;
+}
 
-    #education .badge-custom {
-        width: fit-content;
-    }
+#education .badge-custom {
+    width: fit-content;
+}
 
-    #education .work-custom-body:hover {
-        transform: none;
-    }
+#education .work-custom-body:hover {
+    transform: none;
+}
 
-    #education-flex #auburn-university .badge-custom {
-        background-color: #71b8ea!important;
-        color: #081b55;
-        border: 1.5px solid var(--dark-blue-color)
-    }
+#education-flex #auburn-university .badge-custom {
+    background-color: #71b8ea !important;
+    color: #081b55;
+    border: 1.5px solid var(--dark-blue-color)
+}
 
-    #education-flex #auburn-high-school .badge-custom {
-        border: 1.5px solid var(--dark-green-color);
-    }
+#education-flex #auburn-high-school .badge-custom {
+    border: 1.5px solid var(--dark-green-color);
+}
 
 /* Contact Info
 ------------------------------------*/
