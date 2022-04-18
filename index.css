@@ -64,7 +64,7 @@ img {
 
 .cards-header-custom {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     font-family: 'Roboto Slab', serif;
     vertical-align: middle;
 }
@@ -115,10 +115,6 @@ hr {
     margin-right: 0.4rem;
 }
 
-.cards-header-custom {
-    justify-content: center;
-}
-
 .dark-green {
     color: var(--dark-green-color);
 }
@@ -142,11 +138,6 @@ hr {
 
 .z-2 {
     z-index: -2;
-}
-
-.cards-header-custom a {
-    font-size: x-large;
-    margin-left: 0.25rem;
 }
 
 /* Profile
@@ -176,9 +167,9 @@ hr {
     color: var(--navbar-blue-color);
 }
 
-#about-cws:hover {
-    color: var(--blue-color);
-}
+    #about-cws:hover {
+        color: var(--blue-color);
+    }
 
 #about-body {
     font-family: 'Muli', sans-serif;
@@ -190,7 +181,41 @@ hr {
     font-size: medium;
 }
 
+.socials {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: end;
+}
 
+    .socials a {
+        text-decoration: none;
+    }
+
+#linkedin-social {
+    width: 3rem;
+    transition: filter .2s;
+    vertical-align: -2.3rem;
+    /*filter: hue-rotate(35deg) brightness(0.75);*/
+}
+
+    #linkedin-social:hover {
+        filter: opacity(0.65);
+    }
+
+#github-social {
+    width: 4rem;
+    transition: filter .2s;
+    vertical-align: text-top;
+}
+
+    #github-social:hover {
+        filter: opacity(0.75);
+    }
+
+.mr-2 {
+    margin-right: 0.5rem;
+}
 
 /* Work Experience
 ------------------------------------*/
@@ -441,7 +466,7 @@ a.dark-green:hover {
     text-decoration: none;
 }
 
-#pharmacy-link, #ht-link, .cards-header-custom a {
+#pharmacy-link, #ht-link {
     text-decoration: none;
 }
 
@@ -494,10 +519,6 @@ a.dark-green:hover {
 
 #education .badge-custom {
     width: fit-content;
-}
-
-#education .work-custom-body:hover {
-    transform: none;
 }
 
 #education-flex #auburn-university .badge-custom {
