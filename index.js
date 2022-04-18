@@ -19,6 +19,9 @@ $(document).ready(function () {
         trigger: 'hover focus',
     });
 
+    $('.work-custom-body').attr('tabindex', 0);
+    $('.card-container .card').attr('tabindex', 0);
+
 });
 
 window.addEventListener('scroll', function () {
