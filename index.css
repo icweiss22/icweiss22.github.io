@@ -603,10 +603,77 @@ a.nav-link {
 ------------------------------------*/
 @media (max-width: 1200px) {
     main {
-        background: #bbe2fcaa;
+        background: linear-gradient(to top, #2755d7 0%, #bbe2fc 100%);
     }
 
     #fa-graduation-cap-custom {
         top: 11rem;
     }
+
+    .container {
+        max-width: 1200px;
+    }
+
+    #projects-flex {
+        flex-direction: column;
+    }
+
+    #projects-flex section.card:last-child {
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+
+    .accordion-header button {
+        font-size: xx-large;
+    }
+
+    .project-header {
+        font-size: xxx-large;
+    }
+
+    .project-body {
+        font-size: xx-large;
+    }
+
+    #auburn-university h2, #auburn-high-school h2 {
+        font-size: xxx-large;
+    }
+
+    #education-flex .work-custom-body span.badge-custom {
+        font-size: 1.5rem!important;
+    }
+
+    #first-scholarship {
+        margin-bottom: 0.5rem;
+    }
+
+    #work-experience .work-custom-body {
+        font-size: xx-large;
+    }
+    
+    #work-experience .work-custom-body h2.fw-bold {
+        font-size: xxx-large;
+    }
+
+    .cards-header-custom h2 {
+        font-size: 3.5rem!important;
+    }
+
+    #work-experience .work-custom-body span.badge-custom {
+        font-size: 1.8rem!important;
+    }
+
+    #about #about-body {
+        font-size: xx-large;
+        font-weight: normal;
+    }
+
+    #about .cards-header-custom h1 {
+        font-size: 5.8rem;
+    }
+
+    .subheader-custom {
+        font-size: 3rem;
+    }
+
 }
