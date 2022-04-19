@@ -533,7 +533,7 @@ a.dark-green:hover {
 }
 
 #education-flex #auburn-high-school .badge-custom {
-    border: 1.5px solid var(--dark-green-color)!important;
+    border: 1.5px solid var(--dark-green-color) !important;
 }
 
 /* Contact Info
@@ -618,10 +618,10 @@ a.nav-link {
         flex-direction: column;
     }
 
-    #projects-flex section.card:last-child {
-        margin-left: 0;
-        margin-top: 1.5rem;
-    }
+        #projects-flex section.card:last-child {
+            margin-left: 0;
+            margin-top: 1.5rem;
+        }
 
     .accordion-header button {
         font-size: xx-large;
@@ -640,7 +640,7 @@ a.nav-link {
     }
 
     #education-flex .work-custom-body span.badge-custom {
-        font-size: 1.5rem!important;
+        font-size: 1.5rem !important;
     }
 
     #first-scholarship {
@@ -650,17 +650,17 @@ a.nav-link {
     #work-experience .work-custom-body {
         font-size: xx-large;
     }
-    
-    #work-experience .work-custom-body h2.fw-bold {
-        font-size: 3rem;
-    }
+
+        #work-experience .work-custom-body h2.fw-bold {
+            font-size: 3rem;
+        }
 
     .cards-header-custom h2 {
-        font-size: 3.5rem!important;
+        font-size: 3.5rem !important;
     }
 
     #work-experience .work-custom-body span.badge-custom {
-        font-size: 1.8rem!important;
+        font-size: 1.8rem !important;
     }
 
     #about #about-body {
@@ -676,4 +676,34 @@ a.nav-link {
         font-size: 3rem;
     }
 
+    #about {
+        padding-top: 0rem;
+        margin-top: -4rem;
+    }
+
+    nav {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+
+        nav button.navbar-toggler span {
+            width: 4em;
+            height: 4em;
+        }
+
+    .nav-item {
+        font-size: 2rem;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    footer {
+        font-size: xx-large;
+        border-top: 1.5px solid var(--light-blue-color);
+    }
 }
