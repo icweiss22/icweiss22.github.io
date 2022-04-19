@@ -628,7 +628,7 @@ a.nav-link {
     }
 
     .project-header {
-        font-size: xxx-large;
+        font-size: 3rem;
     }
 
     .project-body {
@@ -636,7 +636,7 @@ a.nav-link {
     }
 
     #auburn-university h2, #auburn-high-school h2 {
-        font-size: xxx-large;
+        font-size: 3rem;
     }
 
     #education-flex .work-custom-body span.badge-custom {
@@ -652,7 +652,7 @@ a.nav-link {
     }
     
     #work-experience .work-custom-body h2.fw-bold {
-        font-size: xxx-large;
+        font-size: 3rem;
     }
 
     .cards-header-custom h2 {
