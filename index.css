@@ -32,12 +32,12 @@ html {
 }
 
 main {
-    background: url(images/blue-background-image.png) repeat center center scroll;
-    background-size: 215%;
+    background: url(images/blue-background-image.png) repeat center right scroll;
+    background-size: 214%;
 }
 
 #about {
-    min-height: 100vh;
+    min-height: 90vh;
     margin-top: 0;
 }
 
