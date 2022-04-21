@@ -32,8 +32,8 @@ html {
 }
 
 main {
-    background: url(images/blue-background-image.png) repeat center right scroll;
-    background-size: 214%;
+    background: url(images/blue-background-image.png) repeat top right scroll;
+    background-size: 136%;
 }
 
 #about {
