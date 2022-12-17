@@ -540,7 +540,7 @@ a.dark-green:hover {
 ------------------------------------*/
 footer {
     color: white;
-    background-color: var(--navbar-blue-color);
+    background-color: #4a27d7;
     padding: 1rem;
     text-align: center;
     font-size: medium;
@@ -554,7 +554,8 @@ footer {
 /* Navbar
 ------------------------------------*/
 .navbar {
-    background-color: var(--navbar-blue-color) !important;
+    background-color: #4a27d7 !important;
+    text-shadow: 2px 2px 3px black;
 }
 
     .navbar a {
@@ -596,7 +597,7 @@ a.nav-link {
 }
 
     a.nav-link.active {
-        background-color: var(--dark-blue-color);
+        background-color: #2e1d70;
     }
 
 /* Responsive
