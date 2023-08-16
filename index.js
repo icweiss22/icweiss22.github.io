@@ -28,5 +28,4 @@ window.addEventListener('scroll', function () {
     if (this.scrollY <= 40) {
         $('#about-nav-link').addClass('active');
     }
-
 })
