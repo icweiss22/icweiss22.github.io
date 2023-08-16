@@ -41,6 +41,14 @@ main {
     margin-top: 0;
 }
 
+#picture-col {
+    align-self: center;
+}
+
+#profile-picture {
+    border-radius: 100%;
+}
+
 .accordion-body {
     border-radius: 0 !important;
 }
