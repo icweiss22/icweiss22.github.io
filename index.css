@@ -47,6 +47,30 @@ main {
 
 #profile-picture {
     border-radius: 100%;
+    width: 100%;
+}
+
+@media (max-width: 990px) {
+    #first-container {
+        margin-top: 13rem;
+    }
+
+    #first-container .col-md-9 {
+        width: 100%!important;
+    }
+
+    #about-body p {
+        font-size: 1.8rem;
+    }
+
+    #picture-col {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #profile-pic {
+        width: 45%;
+    }
 }
 
 .accordion-body {
@@ -657,7 +681,7 @@ a.nav-link {
     }
 
     #work-experience .work-custom-body {
-        font-size: xx-large;
+        font-size: x-large;
     }
 
         #work-experience .work-custom-body h2.fw-bold {
