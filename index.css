@@ -5,15 +5,17 @@ body {
 }
 
 :root {
-    --blue-color: #278ed7;
+    --blue-color: black;
     --icon-size: 175px;
-    --dark-blue-color: #1e3888;
+    --dark-blue-color: black;
     --light-blue-color: #bbe2fc;
-    --navbar-blue-color: #2755d7;
+    --navbar-blue-color: black;
+    --subheader-text-color: slategrey;
     /* These three used to be the secondary design for the website, now these are blue but names are still 'green'*/
     --light-green-color: #f3faff;
     --green-color: #adcee6;
-    --dark-green-color: #004778;
+    --dark-green-color: black;
+    --secondary-color: slategrey;
 }
 
 html {
@@ -34,6 +36,7 @@ html {
 main {
     background: url(images/blue-background-image.png) repeat top right scroll;
     background-size: 136%;
+    background-attachment: fixed!important;
 }
 
 #about {
@@ -186,7 +189,7 @@ hr {
     }
 
     #about #custom-secondary h3 {
-        color: var(--navbar-blue-color);
+        color: var(--subheader-text-color);
     }
 
 #work {
@@ -345,7 +348,7 @@ hr {
 }
 
     .work-custom-body-other .badge-custom {
-        background-color: #195B98 !important;
+        background-color: var(--secondary-color) !important;
         color: white !important;
     }
 
@@ -572,7 +575,7 @@ a.dark-green:hover {
 ------------------------------------*/
 footer {
     color: white;
-    background-color: #4a27d7;
+    background-color: var(--blue-color);
     padding: 1rem;
     text-align: center;
     font-size: medium;
@@ -586,7 +589,7 @@ footer {
 /* Navbar
 ------------------------------------*/
 .navbar {
-    background-color: #4a27d7 !important;
+    background-color: var(--navbar-blue-color)!important;
     text-shadow: 2px 2px 3px black;
 }
 
@@ -629,7 +632,7 @@ a.nav-link {
 }
 
     a.nav-link.active {
-        background-color: #2e1d70;
+        background-color: var(--secondary-color);
     }
 
 /* Responsive
