@@ -1,0 +1,89 @@
+{
+    "about": "Hi, I'm Isaac! Currently a senior at Auburn University majoring in Computer Science with a Business concentration and a French minor. I'm extremely passionate about software engineering, with experience in web development using the .NET ecosystem. I'm familiar with back-end (SSMS, SQL), middleware (.NET, C#), and front-end (HTML, CSS, JavaScript, jQuery) tools, among others.",
+    "workExperience": [
+        {
+            "title": "Campus Web Solutions Full-Stack Web Developer",
+            "description": "Full-stack co-op at a web development firm specializing in developing robust web applications for Auburn University."
+        },
+        {
+            "title": "Universit\u00e9 de Toulon Exchange Student",
+            "description": "Immersed deeply in the local culture while honing language proficiency. Committed to intensive language learning and fostering cross-cultural understanding, contributing to a rich and diverse global perspective."
+        },
+        {
+            "title": "Auburn University ACM Hackathon Logistics Coordinator",
+            "description": "Successfully managed scheduling, room assignments, vendor communication, and more for months leading up to the event. During the event, ensured seamless execution of tasks such as coordinating food services and providing real-time support to participants, contributing to the success of a memorable and impactful Hackathon."
+        },
+        {
+            "title": "Publix, Front Service Clerk",
+            "description": "Efficiently processed customer transactions as cashier and bagger while maintaining a friendly and approachable demeanor, contributing to a positive brand image."
+        },
+        {
+            "title": "University Event Ticketing",
+            "description": ""
+        },
+        {
+            "title": "Pharmacy Scheduler and Healthy Tigers",
+            "description": ""
+        },
+        {
+            "title": "Office of the Vice President of Research Home Page",
+            "description": ""
+        },
+        {
+            "title": "Auburn University",
+            "description": ""
+        },
+        {
+            "title": "Auburn High School",
+            "description": ""
+        }
+    ],
+    "education": [
+        {
+            "school": "Auburn University",
+            "degree": "ADTRAN Scholarship"
+        },
+        {
+            "school": "Auburn High School",
+            "degree": "National Honor Society"
+        }
+    ],
+    "projects": [
+        {
+            "title": "Campus Web Solutions Full-Stack Web Developer",
+            "description": ""
+        },
+        {
+            "title": "Universit\u00e9 de ToulonExchange Student",
+            "description": ""
+        },
+        {
+            "title": "Auburn University ACM Hackathon Logistics Coordinator",
+            "description": ""
+        },
+        {
+            "title": "PublixFront Service Clerk",
+            "description": ""
+        },
+        {
+            "title": "University Event Ticketing",
+            "description": "Auburn University Event Ticketing is Auburn University\u2019s primary strategy for adding, tracking, and sending tickets and parking passes (records) between departments, for use with any event.\n                                                Department administrators are allowed to add records to the system, upload from a spreadsheet, edit record fields (type, price, etc.), and charge a user based on that records\u2019 price.\n                                                Users are also able to send, accept, and deny records sent from other units, while being able to see an audit trail for each individual record.Led development of the Reports Hub, viewable by anyone with site access. These included Ticket Reports and Parking Reports, which were able to be filtered down by date, type, unit, etc. and downloaded to an Excel spreadsheet.\n                                                Also developed the Event Details report which included all records for a specific event, and the User Report which listed everyone who had site access and their privileges in an easy-to-read table. Also developed the feature to bulk edit tickets and parking passes.\n                                                Worked on other miscellanous site-wide features and bug fixes."
+        },
+        {
+            "title": "Pharmacy Scheduler and Healthy Tigers",
+            "description": "Pharmacy Scheduler is Auburn University\u2019s COVID Testing and Vaccination strategy throughout the COVID-19 pandemic. Pharmacy Scheduler is an appointment management system for Auburn students, faculty, staff, and since it is public-facing, community members as well.\n                                                Admin have the ability to create, edit, and delete clinical events that appointments may be scheduled for. Admin also have the ability to manually add appointments, edit email templates for different appointment situations, and send emails for missed appointments.Healthy Tigers is Auburn University\u2019s employee wellness program. Through Healthy Tigers, Auburn employees and their spouses can schedule health screening appointments to earn an insurance premium discount.\n                                                Healthy Tigers initally began as a part of Pharmacy Scheduler, but was later split into its own project. Healthy Tigers communicates with the Auburn employee/spouses\u2019 insurance information to autofill certain fields when creating appointments.\n                                                I developed new features and bug fixes for Releases 5 through 11 in both projects."
+        },
+        {
+            "title": "Office of the Vice President of Research Home Page",
+            "description": "The Office of the Vice President of Research (OVPR) asked Campus Web Solutions to completely redesign their home page from the ground up. On the new OVPR home page, there are eight sections that include cards with photos and text,\n                                                buttons with modal slideouts, Twitter feeds, Youtube videos, and navigation cards. Admins who visit the page may be able to edit, create, or delete any of the editable pictures cards on the site (able to change text or picture).Designed and developed the entire redesign of a new OVPR Home Page (Office of the Vice President of Research), creating both the user and admin views. The entire page is dynamic, not requiring any reloading when a user wishes to edit title,\n                                                image, or toggle visibility of any of the page's content. The page is also responsive, scaling appropiately for screens of any size."
+        },
+        {
+            "title": "Auburn University",
+            "description": ""
+        },
+        {
+            "title": "Auburn High School",
+            "description": ""
+        }
+    ]
+}
