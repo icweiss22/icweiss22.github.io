@@ -34,7 +34,7 @@ html {
 }
 
 main {
-    background: url(images/blue-background-image.png) repeat top right scroll;
+    background: url(../images/blue-background-image.png) repeat top right scroll;
     background-size: 136%;
     background-attachment: fixed!important;
 }
