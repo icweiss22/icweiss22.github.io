@@ -638,94 +638,26 @@ a.nav-link {
 /* Responsive
 ------------------------------------*/
 @media (max-width: 1200px) {
+    /* General Styles */
     main {
         background: linear-gradient(to top, #2755d7 0%, #bbe2fc 100%);
     }
 
-    #fa-graduation-cap-custom {
-        top: 11rem;
-    }
-
-    .container {
-        max-width: 1200px;
-    }
-
-    #projects-flex {
-        flex-direction: column;
-    }
-
-        #projects-flex section.card:last-child {
-            margin-left: 0;
-            margin-top: 1.5rem;
-        }
-
-    .accordion-header button {
+    footer {
         font-size: xx-large;
+        border-top: 1.5px solid var(--light-blue-color);
     }
 
-    .project-header {
-        font-size: 3rem;
-    }
-
-    .project-body {
-        font-size: xx-large;
-    }
-
-    #auburn-university h2, #auburn-high-school h2 {
-        font-size: 3rem;
-    }
-
-    #education-flex .work-custom-body span.badge-custom {
-        font-size: 1.5rem !important;
-    }
-
-    #first-scholarship {
-        margin-bottom: 0.5rem;
-    }
-
-    #work-experience .work-custom-body {
-        font-size: x-large;
-    }
-
-        #work-experience .work-custom-body h2.fw-bold {
-            font-size: 3rem;
-        }
-
-    .cards-header-custom h2 {
-        font-size: 3.5rem !important;
-    }
-
-    #work-experience .work-custom-body span.badge-custom {
-        font-size: 1.8rem !important;
-    }
-
-    #about #about-body {
-        font-size: xx-large;
-        font-weight: normal;
-    }
-
-    #about .cards-header-custom h1 {
-        font-size: 5.8rem;
-    }
-
-    .subheader-custom {
-        font-size: 3rem;
-    }
-
-    #about {
-        padding-top: 0rem;
-        margin-top: -12rem;
-    }
-
+    /* Navigation Styles */
     nav {
         padding-top: 3.5rem;
         padding-bottom: 3.5rem;
     }
 
-        nav button.navbar-toggler span {
-            width: 4em;
-            height: 4em;
-        }
+    nav button.navbar-toggler span {
+        width: 4em;
+        height: 4em;
+    }
 
     .nav-item {
         font-size: 2rem;
@@ -738,8 +670,87 @@ a.nav-link {
         display: none;
     }
 
-    footer {
+    /* Project Section Styles */
+    #projects-flex {
+        flex-direction: column;
+    }
+
+    #projects-flex section.card:last-child {
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+
+    /* Container Styles */
+    .container {
+        max-width: 1200px;
+    }
+
+    /* Accordion Header Styles */
+    .accordion-header button {
         font-size: xx-large;
-        border-top: 1.5px solid var(--light-blue-color);
+    }
+
+    /* Custom Elements Styles */
+    #fa-graduation-cap-custom {
+        top: 11rem;
+    }
+
+    .cards-header-custom h2 {
+        font-size: 3.5rem !important;
+    }
+
+    .subheader-custom {
+        font-size: 3rem;
+    }
+
+    /* About Section Styles */
+    #about {
+        padding-top: 0rem;
+        margin-top: -12rem;
+    }
+
+    #about #about-body {
+        font-size: xx-large;
+        font-weight: normal;
+    }
+
+    #about .cards-header-custom h1 {
+        font-size: 5.8rem;
+    }
+
+    /* Project Header and Body Styles */
+    .project-header {
+        font-size: 3rem;
+    }
+
+    .project-body {
+        font-size: xx-large;
+    }
+
+    /* Education Section Styles */
+    #auburn-university h2, #auburn-high-school h2 {
+        font-size: 3rem;
+    }
+
+    #education-flex .work-custom-body span.badge-custom {
+        font-size: 1.5rem !important;
+    }
+
+    /* Scholarship Styles */
+    #first-scholarship {
+        margin-bottom: 0.5rem;
+    }
+
+    /* Work Experience Styles */
+    #work-experience .work-custom-body {
+        font-size: x-large;
+    }
+
+    #work-experience .work-custom-body h2.fw-bold {
+        font-size: 3rem;
+    }
+
+    #work-experience .work-custom-body span.badge-custom {
+        font-size: 1.8rem !important;
     }
 }
